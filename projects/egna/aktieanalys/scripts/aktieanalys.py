@@ -284,6 +284,7 @@ def git_commit_push(filepath: str, today: str):
 # ── Main ──────────────────────────────────────────────────────────────────────
 
 def main():
+    skip_git = "--skip-git" in sys.argv
     today = date.today().strftime("%Y-%m-%d")
     os.makedirs(OUTPUT_DIR, exist_ok=True)
     output_path = os.path.join(OUTPUT_DIR, f"{today}.md")
@@ -298,7 +299,8 @@ def main():
         f.write(report)
     print(f"\n✓ Rapport sparad: {output_path}")
 
-    git_commit_push(output_path, today)
+    if not skip_git:
+        git_commit_push(output_path, today)
 
 
 if __name__ == "__main__":

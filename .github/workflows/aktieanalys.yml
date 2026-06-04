@@ -1,0 +1,35 @@
+name: Daglig Aktieanalys
+
+on:
+  schedule:
+    - cron: '30 15 * * 1-5'  # Varje vardag 17:30 Stockholm (sommartid)
+  workflow_dispatch:           # Manuell körning via GitHub-knapp
+
+jobs:
+  aktieanalys:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Hämta kod
+        uses: actions/checkout@v4
+
+      - name: Installera Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Installera beroenden
+        run: pip install yfinance anthropic
+
+      - name: Kör aktieanalys
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python projects/egna/aktieanalys/scripts/aktieanalys.py --skip-git
+
+      - name: Committa och pusha rapport
+        run: |
+          git config user.name "Aktieanalys Bot"
+          git config user.email "bot@aktieanalys.se"
+          git add projects/egna/aktieanalys/dagliga/
+          git diff --staged --quiet || git commit -m "Daglig aktieanalys $(date +%Y-%m-%d)"
+          git push
