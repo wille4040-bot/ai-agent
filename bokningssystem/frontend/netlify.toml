@@ -1,0 +1,12 @@
+# Inställningar för Netlify.
+# Säger åt Netlify hur sidan byggs och att alla adresser
+# (t.ex. /frisor-lisa) ska skickas till appen.
+
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

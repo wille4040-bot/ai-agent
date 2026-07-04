@@ -1,0 +1,250 @@
+/* ============================================================
+   DESIGN – rent, modernt och mobilanpassat först.
+   Färger och storlekar styrs härifrån, så det är lätt att
+   ändra utseendet på ett ställe.
+   ============================================================ */
+
+:root {
+  --bakgrund: #f6f7f9;
+  --yta: #ffffff;
+  --text: #1f2430;
+  --dampad: #6b7280;
+  --kant: #e5e7eb;
+  --primar: #0f766e;        /* lugn grön-blå – byts lätt per varumärke */
+  --primar-mork: #115e59;
+  --primar-ljus: #f0fdfa;
+  --fara: #b91c1c;
+  --radie: 12px;
+  --skugga: 0 1px 3px rgba(16, 24, 40, 0.08);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  background: var(--bakgrund);
+  color: var(--text);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ---- Sidans grundlayout ---- */
+.sida {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 20px 16px 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.sida.bred { max-width: 640px; }
+
+.sidhuvud { text-align: center; padding: 8px 0 4px; }
+.sidhuvud h1 { font-size: 1.5rem; letter-spacing: -0.01em; }
+.rad-mellan {
+  display: flex; align-items: center; justify-content: space-between;
+  text-align: left;
+}
+
+.sidfot { text-align: center; margin-top: 8px; }
+
+.kort {
+  background: var(--yta);
+  border: 1px solid var(--kant);
+  border-radius: var(--radie);
+  box-shadow: var(--skugga);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.kort h2 { font-size: 1.15rem; }
+
+.dampad { color: var(--dampad); }
+.liten { font-size: 0.85rem; }
+.centrerad { text-align: center; }
+.info-ruta { text-align: center; }
+code {
+  background: var(--bakgrund);
+  padding: 2px 6px;
+  border-radius: 6px;
+  font-size: 0.9em;
+}
+
+/* ---- Stegvisaren högst upp ---- */
+.stegvisare {
+  display: flex; gap: 6px; justify-content: center;
+}
+.steg-prick {
+  font-size: 0.78rem;
+  color: var(--dampad);
+  background: var(--yta);
+  border: 1px solid var(--kant);
+  border-radius: 999px;
+  padding: 4px 12px;
+}
+.steg-prick.aktiv {
+  color: #fff;
+  background: var(--primar);
+  border-color: var(--primar);
+}
+
+/* ---- Knappar ---- */
+.knapp {
+  appearance: none;
+  border: none;
+  border-radius: var(--radie);
+  padding: 14px 16px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.knapp.primar { background: var(--primar); color: #fff; }
+.knapp.primar:hover { background: var(--primar-mork); }
+.knapp.primar:disabled { opacity: 0.6; cursor: wait; }
+.knapp.sekundar {
+  background: var(--yta); color: var(--text);
+  border: 1px solid var(--kant);
+}
+.knapp.fara { background: #fef2f2; color: var(--fara); border: 1px solid #fecaca; }
+.liten-knapp { padding: 8px 12px; font-size: 0.85rem; }
+.lank-knapp { display: block; text-align: center; text-decoration: none; }
+
+.tillbaka {
+  align-self: flex-start;
+  background: none; border: none; cursor: pointer;
+  color: var(--dampad); font-size: 0.9rem; padding: 0;
+}
+.tillbaka:hover { color: var(--text); }
+
+/* ---- Tjänstelistan (steg 1) ---- */
+.lista { display: flex; flex-direction: column; gap: 10px; }
+
+.tjanst-knapp {
+  display: flex; justify-content: space-between; align-items: center; gap: 12px;
+  width: 100%;
+  background: var(--yta);
+  border: 1px solid var(--kant);
+  border-radius: var(--radie);
+  padding: 14px;
+  font-size: 1rem;
+  text-align: left;
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s;
+}
+.tjanst-knapp:hover { border-color: var(--primar); background: var(--primar-ljus); }
+.tjanst-info { display: flex; flex-direction: column; gap: 2px; }
+.tjanst-detaljer { display: flex; flex-direction: column; align-items: flex-end; gap: 2px; white-space: nowrap; }
+
+/* ---- Dagväljaren (steg 2) ---- */
+.dag-rutnat {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(86px, 1fr));
+  gap: 8px;
+}
+.dag-knapp {
+  display: flex; flex-direction: column; align-items: center; gap: 1px;
+  background: var(--yta);
+  border: 1px solid var(--kant);
+  border-radius: 10px;
+  padding: 10px 4px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: border-color 0.15s, background 0.15s;
+}
+.dag-knapp:hover:not(:disabled) { border-color: var(--primar); background: var(--primar-ljus); }
+.dag-knapp:disabled { opacity: 0.45; cursor: not-allowed; }
+.dag-knapp.vald { border-color: var(--primar); background: var(--primar-ljus); }
+
+/* ---- Tidväljaren (steg 3) ---- */
+.tid-rutnat {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(72px, 1fr));
+  gap: 8px;
+}
+.tid-knapp {
+  background: var(--yta);
+  border: 1px solid var(--kant);
+  border-radius: 10px;
+  padding: 10px 4px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s;
+}
+.tid-knapp:hover { border-color: var(--primar); background: var(--primar-ljus); }
+.tid-knapp.vald { background: var(--primar); color: #fff; border-color: var(--primar); }
+
+/* ---- Formulär (steg 4 + inloggning) ---- */
+.formular { display: flex; flex-direction: column; gap: 12px; }
+.formular label {
+  display: flex; flex-direction: column; gap: 4px;
+  font-size: 0.9rem; font-weight: 600;
+}
+.formular input,
+.formular textarea {
+  font: inherit;
+  font-weight: 400;
+  padding: 12px;
+  border: 1px solid var(--kant);
+  border-radius: 10px;
+  background: var(--yta);
+}
+.formular input:focus,
+.formular textarea:focus {
+  outline: 2px solid var(--primar);
+  outline-offset: -1px;
+  border-color: var(--primar);
+}
+
+.fel-ruta {
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  color: var(--fara);
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-size: 0.9rem;
+}
+
+/* ---- Summering & bekräftelse ---- */
+.summering {
+  background: var(--bakgrund);
+  border-radius: 10px;
+  padding: 12px 14px;
+  display: flex; flex-direction: column; gap: 6px;
+}
+.summering-rad { display: flex; justify-content: space-between; gap: 12px; }
+
+.bekraftelse { text-align: center; align-items: center; }
+.bock {
+  width: 56px; height: 56px;
+  border-radius: 50%;
+  background: var(--primar);
+  color: #fff;
+  font-size: 1.8rem;
+  display: flex; align-items: center; justify-content: center;
+}
+
+/* ---- Adminpanelens bokningsrader ---- */
+.boknings-rad {
+  display: flex; gap: 12px; align-items: center;
+  border: 1px solid var(--kant);
+  border-radius: 10px;
+  padding: 12px;
+}
+.boknings-tid {
+  display: flex; flex-direction: column;
+  min-width: 92px;
+}
+.boknings-info {
+  display: flex; flex-direction: column; gap: 1px;
+  flex: 1;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 480px) {
+  .boknings-rad { flex-wrap: wrap; }
+}

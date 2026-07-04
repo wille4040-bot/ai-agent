@@ -1,0 +1,7 @@
+# Installerade paket och byggresultat – ska inte sparas i git
+node_modules
+dist
+
+# Hemliga nycklar – får ALDRIG hamna i git
+.env
+.env.local
