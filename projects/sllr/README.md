@@ -23,13 +23,14 @@ Supabase SQL Editor (eller `supabase db push` om du använder Supabase CLI):
 1. `0001_init.sql` – tabeller (`profiles`, `listings`, `bookings`, `reviews`)
 2. `0002_rls.sql` – Row Level Security + policyer
 3. `0003_storage.sql` – Storage-bucket för annonsbilder + regler
+4. `0004_bokning.sql` – spärr mot dubbelbokning + funktion för bokade datum
 
 ## Byggplan
 
 - **Pass 1 – Grund:** Vite/React + Supabase-klient + migrations ✅
 - **Pass 2 – Inloggning:** registrering/inloggning + profilsida ✅
 - **Pass 3 – Annonser:** formulär med bilduppladdning + lista/detaljvy ✅
-- **Pass 4 – Bokning:** bokningsflöde med överlappskontroll + översikter
+- **Pass 4 – Bokning:** bokningsflöde med överlappskontroll + översikter ✅
 - **Senare:** Stripe Connect, e-postbekräftelser, BankID-signering, recensioner
 
 ## Affärsregler

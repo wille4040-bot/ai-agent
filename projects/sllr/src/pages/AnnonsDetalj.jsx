@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { supabase } from '../lib/supabase.js'
 import { kr } from '../lib/annonser.js'
+import Bokningsruta from '../components/Bokningsruta.jsx'
 
 // Detaljvy för en annons. Hämtar även uthyrarens företagsnamn via kopplingen
 // till profiles. Bokningsknappen aktiveras i Pass 4.
@@ -87,9 +88,7 @@ export default function AnnonsDetalj() {
             <p style={{ lineHeight: 1.5 }}>{annons.beskrivning}</p>
           )}
 
-          <button className="btn" disabled style={{ marginTop: '1rem' }}>
-            Boka (kommer i Pass 4)
-          </button>
+          <Bokningsruta listing={annons} />
         </div>
       </div>
     </div>

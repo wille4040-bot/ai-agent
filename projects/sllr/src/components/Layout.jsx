@@ -24,6 +24,8 @@ export default function Layout() {
           {user ? (
             <>
               <Link to="/ny-annons">Lägg upp</Link>
+              <Link to="/mina-bokningar">Mina bokningar</Link>
+              <Link to="/mina-uthyrningar">Mina uthyrningar</Link>
               <Link to="/profil">Min profil</Link>
               <button className="btn btn-sekundar" onClick={loggaUt}>
                 Logga ut
