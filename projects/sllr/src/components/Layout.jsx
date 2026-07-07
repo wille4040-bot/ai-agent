@@ -20,8 +20,10 @@ export default function Layout() {
           Sllr
         </Link>
         <nav className="nav">
+          <Link to="/annonser">Annonser</Link>
           {user ? (
             <>
+              <Link to="/ny-annons">Lägg upp</Link>
               <Link to="/profil">Min profil</Link>
               <button className="btn btn-sekundar" onClick={loggaUt}>
                 Logga ut

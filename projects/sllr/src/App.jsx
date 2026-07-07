@@ -4,6 +4,9 @@ import ProtectedRoute from './components/ProtectedRoute.jsx'
 import Home from './pages/Home.jsx'
 import AuthPage from './pages/AuthPage.jsx'
 import Profile from './pages/Profile.jsx'
+import Annonser from './pages/Annonser.jsx'
+import AnnonsDetalj from './pages/AnnonsDetalj.jsx'
+import NyAnnons from './pages/NyAnnons.jsx'
 
 export default function App() {
   return (
@@ -11,6 +14,16 @@ export default function App() {
       <Route element={<Layout />}>
         <Route index element={<Home />} />
         <Route path="logga-in" element={<AuthPage />} />
+        <Route path="annonser" element={<Annonser />} />
+        <Route path="annonser/:id" element={<AnnonsDetalj />} />
+        <Route
+          path="ny-annons"
+          element={
+            <ProtectedRoute>
+              <NyAnnons />
+            </ProtectedRoute>
+          }
+        />
         <Route
           path="profil"
           element={

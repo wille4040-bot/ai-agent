@@ -26,15 +26,16 @@ export default function Home() {
         fakturabetalning och digitala hyresavtal.
       </p>
 
-      {user ? (
-        <Link to="/profil" className="btn">
-          Till min profil
+      <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap', justifyContent: 'center' }}>
+        <Link to="/annonser" className="btn">
+          Bläddra bland annonser
         </Link>
-      ) : (
-        <Link to="/logga-in" className="btn">
-          Kom igång
-        </Link>
-      )}
+        {!user && (
+          <Link to="/logga-in" className="btn btn-sekundar">
+            Skapa företagskonto
+          </Link>
+        )}
+      </div>
     </main>
   )
 }

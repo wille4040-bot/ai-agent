@@ -177,3 +177,167 @@ a {
   border: 1px solid rgba(200, 240, 75, 0.4);
   color: var(--lime);
 }
+
+/* Bredare innehåll för listor/detaljer */
+.innehall-bred {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+.sidtitel {
+  font-size: 1.8rem;
+  margin-bottom: 1.25rem;
+}
+
+.textsvag {
+  color: var(--text-svag);
+}
+
+/* Sök- och filterrad */
+.filterrad {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.filterrad input,
+.filterrad select {
+  font-family: var(--font-brod);
+  font-size: 1rem;
+  padding: 0.6rem 0.8rem;
+  border-radius: 0.6rem;
+  border: 1px solid var(--grafit-linje);
+  background-color: var(--grafit-ljus);
+  color: var(--text);
+}
+
+.filterrad input {
+  flex: 1 1 16rem;
+}
+
+.filterrad input:focus,
+.filterrad select:focus {
+  outline: none;
+  border-color: var(--lime);
+}
+
+/* Rutnät av annonskort */
+.rutnat {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  gap: 1.25rem;
+}
+
+.annonskort {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--grafit-ljus);
+  border: 1px solid var(--grafit-linje);
+  border-radius: 0.9rem;
+  overflow: hidden;
+  text-decoration: none;
+  color: var(--text);
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+
+.annonskort:hover {
+  border-color: var(--lime);
+  transform: translateY(-2px);
+}
+
+.annonsbild {
+  aspect-ratio: 4 / 3;
+  width: 100%;
+  object-fit: cover;
+  background-color: var(--grafit);
+}
+
+.annonsbild-tom {
+  aspect-ratio: 4 / 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--grafit-linje);
+  font-family: var(--font-rubrik);
+  font-size: 2.5rem;
+  background-color: var(--grafit);
+}
+
+.annonskort-kropp {
+  padding: 0.9rem 1rem 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.badge {
+  align-self: flex-start;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  background-color: rgba(200, 240, 75, 0.15);
+  color: var(--lime);
+}
+
+.annonskort-titel {
+  font-family: var(--font-rubrik);
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+.pris {
+  font-family: var(--font-rubrik);
+  font-weight: 700;
+  color: var(--lime);
+}
+
+.pris-enhet {
+  color: var(--text-svag);
+  font-weight: 400;
+  font-size: 0.85rem;
+}
+
+.tomtillstand {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: var(--text-svag);
+}
+
+/* Detaljvy */
+.detalj {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  gap: 2rem;
+  align-items: start;
+}
+
+.detalj-bild {
+  width: 100%;
+  border-radius: 1rem;
+  border: 1px solid var(--grafit-linje);
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  background-color: var(--grafit-ljus);
+}
+
+.detalj dl {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.5rem 1rem;
+  margin: 1.25rem 0;
+}
+
+.detalj dt {
+  color: var(--text-svag);
+}
+
+@media (max-width: 640px) {
+  .detalj {
+    grid-template-columns: 1fr;
+  }
+}
