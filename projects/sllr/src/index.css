@@ -59,3 +59,121 @@ a {
 .btn:hover {
   filter: brightness(1.05);
 }
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn-sekundar {
+  background-color: transparent;
+  color: var(--text);
+  border: 1px solid var(--grafit-linje);
+}
+
+.btn-lank {
+  background: none;
+  border: none;
+  color: var(--lime);
+  font-family: var(--font-brod);
+  font-size: 0.9rem;
+  cursor: pointer;
+  padding: 0;
+  text-decoration: underline;
+}
+
+/* Layout */
+.sidhuvud {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid var(--grafit-linje);
+}
+
+.logga {
+  font-family: var(--font-rubrik);
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--lime);
+  letter-spacing: -0.03em;
+  text-decoration: none;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav a {
+  color: var(--text-svag);
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.nav a:hover {
+  color: var(--text);
+}
+
+.innehall {
+  max-width: 26rem;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem;
+}
+
+/* Kort och formulär */
+.kort {
+  background-color: var(--grafit-ljus);
+  border: 1px solid var(--grafit-linje);
+  border-radius: 1rem;
+  padding: 1.75rem;
+}
+
+.falt {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+.falt label {
+  font-size: 0.85rem;
+  color: var(--text-svag);
+}
+
+.falt input,
+.falt select {
+  font-family: var(--font-brod);
+  font-size: 1rem;
+  padding: 0.65rem 0.8rem;
+  border-radius: 0.6rem;
+  border: 1px solid var(--grafit-linje);
+  background-color: var(--grafit);
+  color: var(--text);
+}
+
+.falt input:focus,
+.falt select:focus {
+  outline: none;
+  border-color: var(--lime);
+}
+
+.notis {
+  padding: 0.7rem 0.9rem;
+  border-radius: 0.6rem;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.notis-fel {
+  background-color: rgba(255, 99, 99, 0.12);
+  border: 1px solid rgba(255, 99, 99, 0.4);
+  color: #ff9d9d;
+}
+
+.notis-ok {
+  background-color: rgba(200, 240, 75, 0.12);
+  border: 1px solid rgba(200, 240, 75, 0.4);
+  color: var(--lime);
+}

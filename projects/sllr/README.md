@@ -26,7 +26,7 @@ Supabase SQL Editor (eller `supabase db push` om du använder Supabase CLI):
 ## Byggplan
 
 - **Pass 1 – Grund:** Vite/React + Supabase-klient + migrations ✅
-- **Pass 2 – Inloggning:** registrering/inloggning + profilsida
+- **Pass 2 – Inloggning:** registrering/inloggning + profilsida ✅
 - **Pass 3 – Annonser:** formulär med bilduppladdning + lista/detaljvy
 - **Pass 4 – Bokning:** bokningsflöde med överlappskontroll + översikter
 - **Senare:** Stripe Connect, e-postbekräftelser, BankID-signering, recensioner
