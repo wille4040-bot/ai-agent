@@ -1,0 +1,61 @@
+:root {
+  /* Färgpalett enligt prototypen */
+  --lime: #c8f04b;
+  --grafit: #12130f;
+  --grafit-ljus: #1c1e18;
+  --grafit-linje: #2b2e26;
+  --text: #f3f5ee;
+  --text-svag: #a7ab9c;
+
+  /* Typsnitt */
+  --font-rubrik: 'Space Grotesk', system-ui, sans-serif;
+  --font-brod: 'Inter', system-ui, sans-serif;
+
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-brod);
+  background-color: var(--grafit);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-rubrik);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+a {
+  color: var(--lime);
+}
+
+.btn {
+  font-family: var(--font-rubrik);
+  font-weight: 600;
+  font-size: 0.95rem;
+  border: none;
+  border-radius: 999px;
+  padding: 0.7rem 1.4rem;
+  cursor: pointer;
+  background-color: var(--lime);
+  color: var(--grafit);
+}
+
+.btn:hover {
+  filter: brightness(1.05);
+}
