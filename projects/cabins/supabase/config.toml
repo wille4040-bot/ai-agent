@@ -1,0 +1,10 @@
+project_id = "sommen-cabins"
+
+# create-checkout anropas från webbappen med anon-nyckeln (giltig JWT).
+[functions.create-checkout]
+verify_jwt = true
+
+# stripe-webhook anropas av Stripe utan JWT – verifieras istället via
+# Stripe-signatur (STRIPE_WEBHOOK_SECRET) i funktionen.
+[functions.stripe-webhook]
+verify_jwt = false

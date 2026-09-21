@@ -8,7 +8,8 @@
     "cabins": "Cabins",
     "equipment": "Equipment",
     "about": "About",
-    "contact": "Contact & FAQ"
+    "contact": "Contact & FAQ",
+    "book": "Book"
   },
   "common": {
     "placeholder": "Content coming soon.",
@@ -129,6 +130,69 @@
     "seeblick": "Cozy holiday home right on the shore of Sommen. Set off from your own jetty by boat or kayak, and warm up in the sauna in the evening. Ideal for families who love water and nature.",
     "waldhuette": "Quietly located cabin at the edge of the forest, a few minutes from the lake. Explore the surroundings by bike; pets are warmly welcome.",
     "sommenblick": "Spacious house with panoramic views over Sommen. Room for up to six people, its own boat, sauna and terrace — perfect for larger groups."
+  },
+  "options": {
+    "kayak": "Kayak",
+    "bike": "Bike",
+    "grill": "Grill",
+    "fishing": "Fishing gear"
+  },
+  "booking": {
+    "title": "Book",
+    "weeks_one": "{{count}} week",
+    "weeks_other": "{{count}} weeks",
+    "steps": ["Cabin & weeks", "Extras", "Summary & payment"],
+    "next": "Next",
+    "back": "Back",
+    "step1": {
+      "title": "Choose cabin and dates",
+      "cabin": "Cabin",
+      "chooseCabin": "Please choose",
+      "start": "Arrival",
+      "weeks": "Weeks"
+    },
+    "step2": {
+      "title": "Add extras",
+      "intro": "Optional equipment — in addition to what's already included in the cabin."
+    },
+    "step3": {
+      "title": "Summary & payment",
+      "name": "Name",
+      "email": "Email",
+      "payWith": "Payment by card, Klarna or SEPA direct debit.",
+      "pay": "Continue to payment"
+    },
+    "summary": {
+      "title": "Your booking",
+      "cabin": "Cabin",
+      "period": "Period",
+      "arrival": "Arrival",
+      "departure": "Departure",
+      "extras": "Extras",
+      "cabinTotal": "Cabin",
+      "optionsTotal": "Extras",
+      "total": "Total",
+      "perWeek": "/ week",
+      "none": "None"
+    },
+    "errors": {
+      "cabin": "Please choose a cabin.",
+      "start": "Please choose an arrival date.",
+      "name": "Please enter your name.",
+      "email": "Please enter a valid email address.",
+      "notConfigured": "Payment is not set up yet. Please contact us directly.",
+      "failed": "Payment could not be started. Please try again."
+    },
+    "success": {
+      "title": "Thank you for your booking!",
+      "body": "Your payment was successful. A confirmation email is on its way.",
+      "home": "To the homepage"
+    },
+    "cancelled": {
+      "title": "Booking cancelled",
+      "body": "The payment was cancelled. Nothing has been charged.",
+      "retry": "Try again"
+    }
   },
   "equipment": {
     "title": "Equipment",

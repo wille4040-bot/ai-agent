@@ -8,7 +8,8 @@
     "cabins": "Stugor",
     "equipment": "Utrustning",
     "about": "Om oss",
-    "contact": "Kontakt & FAQ"
+    "contact": "Kontakt & FAQ",
+    "book": "Boka"
   },
   "common": {
     "placeholder": "Innehåll kommer snart.",
@@ -129,6 +130,69 @@
     "seeblick": "Mysigt fritidshus direkt vid Sommens strand. Från egen brygga ger du dig ut med båt eller kajak, och på kvällen värmer bastun. Perfekt för familjer som älskar vatten och natur.",
     "waldhuette": "Lugnt belägen stuga vid skogsbrynet, några minuter från sjön. Med cyklar utforskar du omgivningen; husdjur är varmt välkomna.",
     "sommenblick": "Rymligt hus med panoramautsikt över Sommen. Plats för upp till sex personer, egen båt, bastu och terrass – perfekt för större sällskap."
+  },
+  "options": {
+    "kayak": "Kajak",
+    "bike": "Cykel",
+    "grill": "Grill",
+    "fishing": "Fiskeutrustning"
+  },
+  "booking": {
+    "title": "Boka",
+    "weeks_one": "{{count}} vecka",
+    "weeks_other": "{{count}} veckor",
+    "steps": ["Stuga & veckor", "Extra", "Översikt & betalning"],
+    "next": "Nästa",
+    "back": "Tillbaka",
+    "step1": {
+      "title": "Välj stuga och period",
+      "cabin": "Stuga",
+      "chooseCabin": "Välj",
+      "start": "Ankomst",
+      "weeks": "Veckor"
+    },
+    "step2": {
+      "title": "Lägg till extra",
+      "intro": "Valfri utrustning – utöver det som redan ingår i stugan."
+    },
+    "step3": {
+      "title": "Översikt & betalning",
+      "name": "Namn",
+      "email": "E-post",
+      "payWith": "Betalning med kort, Klarna eller SEPA-autogiro.",
+      "pay": "Vidare till betalning"
+    },
+    "summary": {
+      "title": "Din bokning",
+      "cabin": "Stuga",
+      "period": "Period",
+      "arrival": "Ankomst",
+      "departure": "Avresa",
+      "extras": "Extra",
+      "cabinTotal": "Stuga",
+      "optionsTotal": "Extra",
+      "total": "Totalt",
+      "perWeek": "/ vecka",
+      "none": "Inga"
+    },
+    "errors": {
+      "cabin": "Välj en stuga.",
+      "start": "Välj ett ankomstdatum.",
+      "name": "Ange ditt namn.",
+      "email": "Ange en giltig e-postadress.",
+      "notConfigured": "Betalning är inte konfigurerad ännu. Kontakta oss direkt.",
+      "failed": "Betalningen kunde inte startas. Försök igen."
+    },
+    "success": {
+      "title": "Tack för din bokning!",
+      "body": "Din betalning lyckades. En bekräftelse via e-post är på väg.",
+      "home": "Till startsidan"
+    },
+    "cancelled": {
+      "title": "Bokning avbruten",
+      "body": "Betalningen avbröts. Inget har debiterats.",
+      "retry": "Försök igen"
+    }
   },
   "equipment": {
     "title": "Utrustning",

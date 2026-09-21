@@ -7,6 +7,9 @@ import CabinDetail from './pages/CabinDetail.jsx'
 import Equipment from './pages/Equipment.jsx'
 import About from './pages/About.jsx'
 import ContactFaq from './pages/ContactFaq.jsx'
+import Booking from './pages/Booking.jsx'
+import BookingSuccess from './pages/BookingSuccess.jsx'
+import BookingCancelled from './pages/BookingCancelled.jsx'
 import NotFound from './pages/NotFound.jsx'
 
 export default function App() {
@@ -19,6 +22,9 @@ export default function App() {
         <Route path="equipment" element={<Equipment />} />
         <Route path="about" element={<About />} />
         <Route path="contact" element={<ContactFaq />} />
+        <Route path="booking" element={<Booking />} />
+        <Route path="booking/success" element={<BookingSuccess />} />
+        <Route path="booking/cancelled" element={<BookingCancelled />} />
         <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>

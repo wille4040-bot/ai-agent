@@ -1,8 +1,10 @@
+import { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 
 import { getCabin } from '../data/cabins.js'
 import { formatPrice } from '../lib/format.js'
+import { getBookedRanges } from '../lib/supabase.js'
 import Gallery from '../components/Gallery.jsx'
 import CabinMap from '../components/CabinMap.jsx'
 import AvailabilityCalendar from '../components/AvailabilityCalendar.jsx'
@@ -11,6 +13,20 @@ export default function CabinDetail() {
   const { id } = useParams()
   const { t, i18n } = useTranslation()
   const cabin = getCabin(id)
+
+  // Live tillgänglighet från databasen när backend är konfigurerad,
+  // annars faller vi tillbaka på den statiska datan.
+  const [booked, setBooked] = useState(cabin?.booked || [])
+  useEffect(() => {
+    if (!cabin) return
+    let active = true
+    getBookedRanges(cabin.id, cabin.booked).then((ranges) => {
+      if (active) setBooked(ranges)
+    })
+    return () => {
+      active = false
+    }
+  }, [cabin])
 
   if (!cabin) {
     return (
@@ -60,7 +76,7 @@ export default function CabinDetail() {
           <CabinMap coords={cabin.coords} title={cabin.name} />
 
           <h2>{t('cabinDetail.availabilityTitle')}</h2>
-          <AvailabilityCalendar booked={cabin.booked} />
+          <AvailabilityCalendar booked={booked} />
         </div>
 
         <aside className="booking-box">
@@ -72,7 +88,10 @@ export default function CabinDetail() {
             <li>{t('cabins.beds', { count: cabin.beds })}</li>
             <li>{t('cabins.distanceLabel', { meters: cabin.distanceToWater })}</li>
           </ul>
-          <Link to="/contact" className="btn btn-primary btn-block">
+          <Link
+            to={`/booking?cabin=${cabin.id}`}
+            className="btn btn-primary btn-block"
+          >
             {t('cabinDetail.bookCta')}
           </Link>
         </aside>

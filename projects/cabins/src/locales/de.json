@@ -8,7 +8,8 @@
     "cabins": "Hütten",
     "equipment": "Ausstattung",
     "about": "Über uns",
-    "contact": "Kontakt & FAQ"
+    "contact": "Kontakt & FAQ",
+    "book": "Buchen"
   },
   "common": {
     "placeholder": "Inhalt folgt in Kürze.",
@@ -129,6 +130,69 @@
     "seeblick": "Gemütliches Ferienhaus direkt am Ufer des Sommen. Vom eigenen Steg starten Sie mit Boot oder Kajak, abends wärmt die Sauna. Ideal für Familien, die Wasser und Natur lieben.",
     "waldhuette": "Ruhig gelegene Hütte am Waldrand, wenige Minuten vom See entfernt. Mit Fahrrädern erkunden Sie die Umgebung; Haustiere sind herzlich willkommen.",
     "sommenblick": "Großzügiges Haus mit Panoramablick auf den Sommen. Platz für bis zu sechs Personen, eigenes Boot, Sauna und Terrasse – perfekt für größere Gruppen."
+  },
+  "options": {
+    "kayak": "Kajak",
+    "bike": "Fahrrad",
+    "grill": "Grill",
+    "fishing": "Angelausrüstung"
+  },
+  "booking": {
+    "title": "Buchen",
+    "weeks_one": "{{count}} Woche",
+    "weeks_other": "{{count}} Wochen",
+    "steps": ["Hütte & Wochen", "Extras", "Übersicht & Zahlung"],
+    "next": "Weiter",
+    "back": "Zurück",
+    "step1": {
+      "title": "Hütte und Zeitraum wählen",
+      "cabin": "Hütte",
+      "chooseCabin": "Bitte wählen",
+      "start": "Anreise",
+      "weeks": "Wochen"
+    },
+    "step2": {
+      "title": "Extras hinzufügen",
+      "intro": "Optionale Ausrüstung – zusätzlich zu dem, was in der Hütte bereits enthalten ist."
+    },
+    "step3": {
+      "title": "Übersicht & Zahlung",
+      "name": "Name",
+      "email": "E-Mail",
+      "payWith": "Bezahlung mit Karte, Klarna oder SEPA-Lastschrift.",
+      "pay": "Weiter zur Zahlung"
+    },
+    "summary": {
+      "title": "Ihre Buchung",
+      "cabin": "Hütte",
+      "period": "Zeitraum",
+      "arrival": "Anreise",
+      "departure": "Abreise",
+      "extras": "Extras",
+      "cabinTotal": "Hütte",
+      "optionsTotal": "Extras",
+      "total": "Gesamt",
+      "perWeek": "/ Woche",
+      "none": "Keine"
+    },
+    "errors": {
+      "cabin": "Bitte wählen Sie eine Hütte.",
+      "start": "Bitte wählen Sie ein Anreisedatum.",
+      "name": "Bitte geben Sie Ihren Namen ein.",
+      "email": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
+      "notConfigured": "Die Zahlung ist noch nicht eingerichtet. Bitte kontaktieren Sie uns direkt.",
+      "failed": "Die Zahlung konnte nicht gestartet werden. Bitte versuchen Sie es erneut."
+    },
+    "success": {
+      "title": "Vielen Dank für Ihre Buchung!",
+      "body": "Ihre Zahlung war erfolgreich. Eine Bestätigung per E-Mail ist unterwegs.",
+      "home": "Zur Startseite"
+    },
+    "cancelled": {
+      "title": "Buchung abgebrochen",
+      "body": "Die Zahlung wurde abgebrochen. Es wurde nichts berechnet.",
+      "retry": "Erneut versuchen"
+    }
   },
   "equipment": {
     "title": "Ausstattung",

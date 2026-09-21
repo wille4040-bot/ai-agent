@@ -47,6 +47,13 @@ export default function Navbar() {
               {t(key)}
             </NavLink>
           ))}
+          <NavLink
+            to="/booking"
+            className="btn btn-primary nav-cta"
+            onClick={() => setOpen(false)}
+          >
+            {t('nav.book')}
+          </NavLink>
           <LanguageSwitcher />
         </nav>
       </div>
