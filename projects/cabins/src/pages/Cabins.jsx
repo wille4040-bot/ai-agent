@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next'
 import { cabins, priceRange, distanceRange } from '../data/cabins.js'
 import { formatPrice } from '../lib/format.js'
 import CabinCard from '../components/CabinCard.jsx'
+import Seo from '../components/Seo.jsx'
 
 const maxBeds = Math.max(...cabins.map((c) => c.beds))
 const bedOptions = Array.from({ length: maxBeds - 1 }, (_, i) => i + 2) // 2..maxBeds
@@ -34,6 +35,7 @@ export default function Cabins() {
 
   return (
     <section className="container section">
+      <Seo title={t('seo.cabins.title')} description={t('seo.cabins.description')} />
       <h1>{t('cabins.title')}</h1>
       <p className="lead">{t('cabins.intro')}</p>
 

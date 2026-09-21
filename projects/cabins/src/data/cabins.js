@@ -90,6 +90,11 @@ export function getCabin(id) {
   return cabins.find((c) => c.id === id)
 }
 
+// Stugor som innehåller någon av de angivna utrustningsnycklarna.
+export function cabinsWithAny(...keys) {
+  return cabins.filter((c) => keys.some((k) => c.included.includes(k)))
+}
+
 // Bekvämt för filter-standardvärden.
 export const priceRange = {
   min: Math.min(...cabins.map((c) => c.pricePerWeek)),

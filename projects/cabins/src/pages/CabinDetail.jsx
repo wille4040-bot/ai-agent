@@ -8,6 +8,7 @@ import { getBookedRanges } from '../lib/supabase.js'
 import Gallery from '../components/Gallery.jsx'
 import CabinMap from '../components/CabinMap.jsx'
 import AvailabilityCalendar from '../components/AvailabilityCalendar.jsx'
+import Seo from '../components/Seo.jsx'
 
 export default function CabinDetail() {
   const { id } = useParams()
@@ -44,6 +45,10 @@ export default function CabinDetail() {
 
   return (
     <section className="container section">
+      <Seo
+        title={`${cabin.name} – ${t('seo.cabinSuffix')}`}
+        description={description}
+      />
       <Link to="/cabins" className="back-link">
         ← {t('common.back')}
       </Link>

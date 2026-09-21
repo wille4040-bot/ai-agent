@@ -8,3 +8,7 @@ verify_jwt = true
 # Stripe-signatur (STRIPE_WEBHOOK_SECRET) i funktionen.
 [functions.stripe-webhook]
 verify_jwt = false
+
+# pre-arrival anropas av schemaläggaren – skyddas via CRON_SECRET-header.
+[functions.pre-arrival]
+verify_jwt = false

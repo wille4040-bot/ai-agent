@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Ersätt domänen nedan med den riktiga innan lansering.
+Sitemap: https://din-domän.se/sitemap.xml

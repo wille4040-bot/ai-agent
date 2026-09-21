@@ -9,7 +9,70 @@
     "equipment": "Equipment",
     "about": "About",
     "contact": "Contact & FAQ",
-    "book": "Book"
+    "book": "Book",
+    "fishing": "Fishing",
+    "dogs": "With dog"
+  },
+  "seo": {
+    "home": {
+      "title": "Holiday home at Lake Sommen – cabin & equipment in one booking",
+      "description": "Rent holiday cabins at Lake Sommen: boat, kayak and sauna included. A nature-close active holiday in southern Sweden — all in a single booking."
+    },
+    "cabins": {
+      "title": "Rent holiday cabins at Sommen",
+      "description": "All holiday homes at Lake Sommen at a glance — filter by beds, price and distance to the water. Equipment included."
+    },
+    "cabinSuffix": "holiday cabin at Lake Sommen",
+    "equipment": {
+      "title": "Equipment in the cabins at Sommen",
+      "description": "Boat, kayak, sauna, Wi-Fi and more: the equipment included in the booking depending on the cabin at Lake Sommen."
+    },
+    "about": {
+      "title": "About us – holiday cabins at Lake Sommen",
+      "description": "We rent nature-close holiday homes at Lake Sommen in southern Sweden — cabin and equipment in one booking."
+    },
+    "contact": {
+      "title": "Contact & FAQ – cabins at Sommen",
+      "description": "Questions about booking, arrival or equipment? Contact and frequently asked questions about our cabins at Lake Sommen."
+    },
+    "booking": {
+      "title": "Book a holiday cabin at Lake Sommen",
+      "description": "Book a cabin at Sommen in three steps: choose cabin and weeks, add extras, pay securely by card, Klarna or SEPA."
+    },
+    "fishing": {
+      "title": "Fishing holiday at Lake Sommen – cabin with boat",
+      "description": "Fishing at Lake Sommen: pike, perch and whitefish. Holiday homes with their own boat and fishing gear — book a fishing cabin now."
+    },
+    "dogs": {
+      "title": "Dog-friendly holiday homes at Lake Sommen",
+      "description": "Holiday with a dog at Sommen: dog-friendly cabins in a natural setting. Pets welcome at no extra cost — book now."
+    }
+  },
+  "landing": {
+    "fishing": {
+      "h1": "Fishing holiday at Lake Sommen",
+      "intro": "Sommen is one of the most fish-rich lakes in southern Sweden. From our cabins you head straight out to fish — for pike, perch, whitefish and eel.",
+      "points": [
+        "Your own rowing boat at the cabin",
+        "Fishing gear available as an extra",
+        "Clear, fish-rich water with over 350 islands"
+      ],
+      "cabinsTitle": "Cabins for fishing",
+      "cabinsIntro": "These cabins are by the water and come with their own boat.",
+      "cta": "Book a fishing cabin now"
+    },
+    "dogs": {
+      "h1": "Dog-friendly cabins at Sommen",
+      "intro": "Your dog is warmly welcome with us. In our dog-friendly cabins, you and your four-legged friend can enjoy the nature around Lake Sommen.",
+      "points": [
+        "Pets at no extra cost",
+        "Forests and shoreline to walk right outside the door",
+        "Natural plots away from traffic"
+      ],
+      "cabinsTitle": "Dog-friendly cabins",
+      "cabinsIntro": "These cabins welcome pets.",
+      "cta": "Book a dog-friendly cabin"
+    }
   },
   "common": {
     "placeholder": "Content coming soon.",
@@ -99,7 +162,8 @@
     "mapTitle": "Location",
     "availabilityTitle": "Availability",
     "bookCta": "Send inquiry",
-    "galleryAlt": "Photo {{n}}"
+    "galleryAlt": "Photo {{n}}",
+    "imageAlt": "{{name}} – holiday cabin at Lake Sommen (photo {{n}})"
   },
   "calendar": {
     "available": "Free",
@@ -227,6 +291,7 @@
     ]
   },
   "footer": {
+    "exploreTitle": "Explore",
     "rights": "All rights reserved."
   }
 }

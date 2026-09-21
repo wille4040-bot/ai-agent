@@ -1,5 +1,7 @@
 import { useTranslation } from 'react-i18next'
 
+import Seo from '../components/Seo.jsx'
+
 export default function ContactFaq() {
   const { t } = useTranslation()
   // returnObjects ger tillbaka arrayen med frågor/svar från översättningsfilen.
@@ -8,6 +10,7 @@ export default function ContactFaq() {
 
   return (
     <section className="container section">
+      <Seo title={t('seo.contact.title')} description={t('seo.contact.description')} />
       <h1>{t('contact.title')}</h1>
 
       <h2>{t('contact.contactTitle')}</h2>

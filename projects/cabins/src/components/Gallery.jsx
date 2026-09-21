@@ -10,7 +10,11 @@ export default function Gallery({ count = 4, name = '' }) {
 
   return (
     <div className="gallery">
-      <div className={`gallery-main tile-${active % 4}`}>
+      <div
+        className={`gallery-main tile-${active % 4}`}
+        role="img"
+        aria-label={t('cabinDetail.imageAlt', { name, n: active + 1 })}
+      >
         <span>
           {name ? `${name} · ` : ''}
           {t('cabinDetail.galleryAlt', { n: active + 1 })}
@@ -24,7 +28,7 @@ export default function Gallery({ count = 4, name = '' }) {
               type="button"
               role="tab"
               aria-selected={active === i}
-              aria-label={t('cabinDetail.galleryAlt', { n: i + 1 })}
+              aria-label={t('cabinDetail.imageAlt', { name, n: i + 1 })}
               className={`gallery-thumb tile-${i % 4}` + (active === i ? ' is-active' : '')}
               onClick={() => setActive(i)}
             >

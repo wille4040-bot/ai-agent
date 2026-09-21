@@ -36,6 +36,8 @@ async function send(to: string, subject: string, html: string) {
   }
 }
 
+import type { ArrivalInfo } from './arrival.ts'
+
 type Booking = {
   guest_name: string
   guest_email: string
@@ -105,4 +107,26 @@ export async function sendUnavailableEmail(b: Booking) {
   </div>`
 
   await send(b.guest_email, `Buchung nicht möglich – ${cabin}`, html)
+}
+
+// Tysk anreseinformation några dagar innan ankomst.
+export async function sendPreArrivalEmail(b: Booking, info: ArrivalInfo) {
+  const cabin = CABIN_LABELS[b.cabin_id] ?? b.cabin_id
+  const html = `
+  <div style="font-family: Arial, sans-serif; color: #1f2a24; max-width: 560px;">
+    <h2 style="color: #2f5d50;">Ihre Anreise steht bevor</h2>
+    <p>Hallo ${b.guest_name},</p>
+    <p>bald ist es so weit! Hier finden Sie alle wichtigen Informationen für Ihre
+    Anreise zur Hütte <strong>${cabin}</strong> am ${formatDate(b.start_date)}.</p>
+    <table style="border-collapse: collapse; width: 100%; margin: 16px 0;">
+      <tr><td style="padding:8px 0; color:#5c6b63; vertical-align:top; width:40%;">Adresse</td><td style="padding:8px 0;">${info.address}</td></tr>
+      <tr><td style="padding:8px 0; color:#5c6b63; vertical-align:top;">Anfahrt</td><td style="padding:8px 0;">${info.directions}</td></tr>
+      <tr><td style="padding:8px 0; color:#5c6b63; vertical-align:top;">Check-in</td><td style="padding:8px 0;">${info.checkInTime}</td></tr>
+      <tr><td style="padding:8px 0; color:#5c6b63; vertical-align:top;">Schlüsselübergabe</td><td style="padding:8px 0;">${info.keyHandover}</td></tr>
+    </table>
+    <p>Wir wünschen Ihnen eine gute Anreise und einen schönen Aufenthalt am Sommen!</p>
+    <p style="color:#5c6b63;">Herzliche Grüße,<br/>Ihr Sommen-Hütten-Team</p>
+  </div>`
+
+  await send(b.guest_email, `Ihre Anreise zur Hütte ${cabin} am Sommen`, html)
 }

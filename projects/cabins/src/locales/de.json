@@ -9,7 +9,74 @@
     "equipment": "Ausstattung",
     "about": "Über uns",
     "contact": "Kontakt & FAQ",
-    "book": "Buchen"
+    "book": "Buchen",
+    "fishing": "Angeln",
+    "dogs": "Mit Hund"
+  },
+  "seo": {
+    "home": {
+      "title": "Ferienhaus am See Sommen – Hütte & Ausrüstung in einer Buchung",
+      "description": "Ferienhütten am See Sommen mieten: Boot, Kajak und Sauna inklusive. Naturnaher Aktivurlaub in Südschweden – alles in einer einzigen Buchung."
+    },
+    "cabins": {
+      "title": "Ferienhütten am Sommen mieten",
+      "description": "Alle Ferienhäuser am See Sommen im Überblick – filterbar nach Betten, Preis und Nähe zum Wasser. Ausrüstung inklusive."
+    },
+    "cabinSuffix": "Ferienhütte am See Sommen",
+    "equipment": {
+      "title": "Ausstattung der Ferienhütten am Sommen",
+      "description": "Boot, Kajak, Sauna, WLAN und mehr: die Ausrüstung, die je nach Ferienhütte am See Sommen in der Buchung enthalten ist."
+    },
+    "about": {
+      "title": "Über uns – Ferienhütten am See Sommen",
+      "description": "Wir vermieten naturnahe Ferienhäuser am See Sommen in Südschweden – Hütte und Ausrüstung in einer Buchung."
+    },
+    "contact": {
+      "title": "Kontakt & FAQ – Ferienhütten am Sommen",
+      "description": "Fragen zu Buchung, Anreise oder Ausstattung? Kontakt und häufige Fragen zu unseren Ferienhütten am See Sommen."
+    },
+    "booking": {
+      "title": "Ferienhütte am See Sommen buchen",
+      "description": "Ferienhütte am Sommen in drei Schritten buchen: Hütte und Wochen wählen, Extras hinzufügen, sicher bezahlen mit Karte, Klarna oder SEPA."
+    },
+    "fishing": {
+      "title": "Angelurlaub am See Sommen – Ferienhaus mit Boot",
+      "description": "Angeln am See Sommen: Hecht, Barsch und Felchen. Ferienhäuser mit eigenem Boot und Angelausrüstung – jetzt Angelhütte buchen."
+    },
+    "dogs": {
+      "title": "Hundefreundliche Ferienhäuser am See Sommen",
+      "description": "Urlaub mit Hund am Sommen: hundefreundliche Ferienhütten in Naturlage. Haustiere willkommen, ohne Aufpreis – jetzt buchen."
+    }
+  },
+  "landing": {
+    "fishing": {
+      "h1": "Angelurlaub am See Sommen",
+      "intro": "Der Sommen zählt zu den fischreichsten Seen Südschwedens. Von unseren Ferienhütten aus starten Sie direkt zum Angeln – auf Hecht, Barsch, Felchen und Aal.",
+      "points": [
+        "Eigenes Ruderboot direkt an der Hütte",
+        "Angelausrüstung als Extra buchbar",
+        "Klares, fischreiches Wasser mit über 350 Inseln"
+      ],
+      "cabinsTitle": "Ferienhütten zum Angeln",
+      "cabinsIntro": "Diese Hütten liegen am Wasser und bieten ein eigenes Boot.",
+      "cta": "Jetzt Angelhütte buchen"
+    },
+    "dogs": {
+      "h1": "Hundefreundliche Ferienhäuser am Sommen",
+      "intro": "Ihr Hund ist bei uns herzlich willkommen. In unseren hundefreundlichen Ferienhütten genießen Sie und Ihr Vierbeiner die Natur rund um den See Sommen.",
+      "points": [
+        "Haustiere ohne Aufpreis",
+        "Wälder und Ufer zum Spazieren direkt vor der Tür",
+        "Naturnahe Grundstücke abseits vom Verkehr"
+      ],
+      "cabinsTitle": "Hundefreundliche Hütten",
+      "cabinsIntro": "Diese Hütten heißen Haustiere willkommen.",
+      "cta": "Hundefreundliche Hütte buchen"
+    }
+  },
+  "footer": {
+    "exploreTitle": "Entdecken",
+    "rights": "Alle Rechte vorbehalten."
   },
   "common": {
     "placeholder": "Inhalt folgt in Kürze.",
@@ -99,7 +166,8 @@
     "mapTitle": "Lage",
     "availabilityTitle": "Verfügbarkeit",
     "bookCta": "Jetzt anfragen",
-    "galleryAlt": "Foto {{n}}"
+    "galleryAlt": "Foto {{n}}",
+    "imageAlt": "{{name}} – Ferienhütte am See Sommen (Foto {{n}})"
   },
   "calendar": {
     "available": "Frei",
@@ -225,8 +293,5 @@
         "a": "Das hängt von der jeweiligen Hütte ab. Details finden Sie auf der Hüttenseite."
       }
     ]
-  },
-  "footer": {
-    "rights": "Alle Rechte vorbehalten."
   }
 }

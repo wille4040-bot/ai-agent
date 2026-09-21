@@ -337,13 +337,52 @@ h2 {
 .footer-inner {
   max-width: var(--maxw);
   margin: 0 auto;
-  padding: 1.5rem 16px;
+  padding: 2rem 16px 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.footer-name {
+  font-weight: 700;
+  color: var(--text);
+  font-size: 1.05rem;
+}
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.footer-heading {
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 0.15rem;
+}
+.footer-link {
+  color: var(--muted);
+}
+.footer-link:hover {
+  color: var(--brand);
+  text-decoration: none;
+}
+.footer-bottom {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 1rem 16px;
+  border-top: 1px solid var(--border);
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 0.5rem;
   color: var(--muted);
-  font-size: 0.9rem;
+  font-size: 0.85rem;
 }
 .footer-muted {
   opacity: 0.8;

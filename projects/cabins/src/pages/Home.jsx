@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next'
 
 import { cabins } from '../data/cabins.js'
 import CabinCard from '../components/CabinCard.jsx'
+import Seo from '../components/Seo.jsx'
 
 export default function Home() {
   const { t } = useTranslation()
@@ -12,6 +13,7 @@ export default function Home() {
 
   return (
     <>
+      <Seo title={t('seo.home.title')} description={t('seo.home.description')} />
       {/* Hero */}
       <section className="hero">
         <div className="container">

@@ -9,7 +9,70 @@
     "equipment": "Utrustning",
     "about": "Om oss",
     "contact": "Kontakt & FAQ",
-    "book": "Boka"
+    "book": "Boka",
+    "fishing": "Fiske",
+    "dogs": "Med hund"
+  },
+  "seo": {
+    "home": {
+      "title": "Fritidshus vid sjön Sommen – stuga & utrustning i en bokning",
+      "description": "Hyr fritidshus vid sjön Sommen: båt, kajak och bastu ingår. Naturnära aktiv semester i Sydsverige – allt i en och samma bokning."
+    },
+    "cabins": {
+      "title": "Hyr fritidshus vid Sommen",
+      "description": "Alla fritidshus vid sjön Sommen – filtrera efter bäddar, pris och närhet till vattnet. Utrustning ingår."
+    },
+    "cabinSuffix": "Fritidshus vid sjön Sommen",
+    "equipment": {
+      "title": "Utrustning i stugorna vid Sommen",
+      "description": "Båt, kajak, bastu, WiFi och mer: utrustningen som ingår i bokningen beroende på stuga vid sjön Sommen."
+    },
+    "about": {
+      "title": "Om oss – fritidshus vid sjön Sommen",
+      "description": "Vi hyr ut naturnära fritidshus vid sjön Sommen i Sydsverige – stuga och utrustning i en bokning."
+    },
+    "contact": {
+      "title": "Kontakt & FAQ – stugor vid Sommen",
+      "description": "Frågor om bokning, ankomst eller utrustning? Kontakt och vanliga frågor om våra stugor vid sjön Sommen."
+    },
+    "booking": {
+      "title": "Boka stuga vid sjön Sommen",
+      "description": "Boka stuga vid Sommen i tre steg: välj stuga och veckor, lägg till extra, betala säkert med kort, Klarna eller SEPA."
+    },
+    "fishing": {
+      "title": "Fiskesemester vid sjön Sommen – stuga med båt",
+      "description": "Fiska i sjön Sommen: gädda, abborre och sik. Stugor med egen båt och fiskeutrustning – boka fiskestuga nu."
+    },
+    "dogs": {
+      "title": "Hundvänliga stugor vid sjön Sommen",
+      "description": "Semester med hund vid Sommen: hundvänliga stugor i naturskönt läge. Husdjur välkomna utan extra kostnad – boka nu."
+    }
+  },
+  "landing": {
+    "fishing": {
+      "h1": "Fiskesemester vid sjön Sommen",
+      "intro": "Sommen är en av Sydsveriges fiskrikaste sjöar. Från våra stugor ger du dig ut direkt för att fiska – gädda, abborre, sik och ål.",
+      "points": [
+        "Egen roddbåt vid stugan",
+        "Fiskeutrustning som tillval",
+        "Klart, fiskrikt vatten med över 350 öar"
+      ],
+      "cabinsTitle": "Stugor för fiske",
+      "cabinsIntro": "De här stugorna ligger vid vattnet och har egen båt.",
+      "cta": "Boka fiskestuga nu"
+    },
+    "dogs": {
+      "h1": "Hundvänliga stugor vid Sommen",
+      "intro": "Din hund är varmt välkommen hos oss. I våra hundvänliga stugor njuter du och din fyrbenta vän av naturen runt sjön Sommen.",
+      "points": [
+        "Husdjur utan extra kostnad",
+        "Skog och strand att promenera vid direkt utanför dörren",
+        "Naturnära tomter borta från trafiken"
+      ],
+      "cabinsTitle": "Hundvänliga stugor",
+      "cabinsIntro": "De här stugorna välkomnar husdjur.",
+      "cta": "Boka hundvänlig stuga"
+    }
   },
   "common": {
     "placeholder": "Innehåll kommer snart.",
@@ -99,7 +162,8 @@
     "mapTitle": "Läge",
     "availabilityTitle": "Tillgänglighet",
     "bookCta": "Skicka förfrågan",
-    "galleryAlt": "Foto {{n}}"
+    "galleryAlt": "Foto {{n}}",
+    "imageAlt": "{{name}} – fritidshus vid sjön Sommen (foto {{n}})"
   },
   "calendar": {
     "available": "Ledig",
@@ -227,6 +291,7 @@
     ]
   },
   "footer": {
+    "exploreTitle": "Upptäck",
     "rights": "Alla rättigheter förbehållna."
   }
 }

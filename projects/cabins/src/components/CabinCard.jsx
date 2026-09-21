@@ -8,8 +8,13 @@ export default function CabinCard({ cabin }) {
 
   return (
     <li className="cabin-card">
-      <Link to={`/cabins/${cabin.id}`} className="cabin-thumb" aria-hidden="true">
-        <span>{t('common.comingSoon')}</span>
+      <Link
+        to={`/cabins/${cabin.id}`}
+        className="cabin-thumb"
+        role="img"
+        aria-label={t('cabinDetail.imageAlt', { name: cabin.name, n: 1 })}
+      >
+        <span aria-hidden="true">{t('common.comingSoon')}</span>
       </Link>
       <div className="cabin-body">
         <h3 className="cabin-name">

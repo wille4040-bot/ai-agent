@@ -7,6 +7,7 @@ import { bookingOptions } from '../data/options.js'
 import { computeTotal, endDate, toISODate } from '../lib/pricing.js'
 import { formatPrice, intlLocale } from '../lib/format.js'
 import { startCheckout } from '../lib/checkout.js'
+import Seo from '../components/Seo.jsx'
 
 const WEEK_CHOICES = [1, 2, 3, 4]
 
@@ -102,6 +103,7 @@ export default function Booking() {
 
   return (
     <section className="container section booking">
+      <Seo title={t('seo.booking.title')} description={t('seo.booking.description')} />
       <h1>{t('booking.title')}</h1>
 
       {/* Steg-indikator */}
