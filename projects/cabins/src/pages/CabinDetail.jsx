@@ -2,11 +2,14 @@ import { Link, useParams } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 
 import { getCabin } from '../data/cabins.js'
-import Placeholder from '../components/Placeholder.jsx'
+import { formatPrice } from '../lib/format.js'
+import Gallery from '../components/Gallery.jsx'
+import CabinMap from '../components/CabinMap.jsx'
+import AvailabilityCalendar from '../components/AvailabilityCalendar.jsx'
 
 export default function CabinDetail() {
   const { id } = useParams()
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
   const cabin = getCabin(id)
 
   if (!cabin) {
@@ -21,26 +24,59 @@ export default function CabinDetail() {
     )
   }
 
+  const description = t(`cabinDescriptions.${cabin.id}`)
+
   return (
     <section className="container section">
       <Link to="/cabins" className="back-link">
         ← {t('common.back')}
       </Link>
 
-      <h1>{cabin.name}</h1>
-      <div className="detail-hero" aria-hidden="true">
-        <span>{t('common.comingSoon')}</span>
+      <div className="detail-header">
+        <h1>{cabin.name}</h1>
+        <ul className="cabin-meta">
+          <li>{t('cabins.beds', { count: cabin.beds })}</li>
+          <li>{t('cabins.distanceLabel', { meters: cabin.distanceToWater })}</li>
+        </ul>
       </div>
 
-      <h2>{t('cabinDetail.descriptionTitle')}</h2>
-      <Placeholder />
+      <Gallery count={cabin.images} name={cabin.name} />
 
-      <h2>{t('cabinDetail.equipmentTitle')}</h2>
-      <Placeholder />
+      <div className="detail-grid">
+        <div className="detail-main">
+          <h2>{t('cabinDetail.descriptionTitle')}</h2>
+          <p className="lead">{description}</p>
 
-      <button type="button" className="btn btn-primary" disabled>
-        {t('cabinDetail.bookCta')}
-      </button>
+          <h2>{t('cabinDetail.includedTitle')}</h2>
+          <ul className="included-list">
+            {cabin.included.map((key) => (
+              <li key={key} className="included-item">
+                {t(`features.${key}`)}
+              </li>
+            ))}
+          </ul>
+
+          <h2>{t('cabinDetail.mapTitle')}</h2>
+          <CabinMap coords={cabin.coords} title={cabin.name} />
+
+          <h2>{t('cabinDetail.availabilityTitle')}</h2>
+          <AvailabilityCalendar booked={cabin.booked} />
+        </div>
+
+        <aside className="booking-box">
+          <p className="booking-price">
+            <strong>{formatPrice(cabin.pricePerWeek, i18n.language)}</strong>
+            <span className="muted"> {t('cabins.perWeek')}</span>
+          </p>
+          <ul className="booking-facts">
+            <li>{t('cabins.beds', { count: cabin.beds })}</li>
+            <li>{t('cabins.distanceLabel', { meters: cabin.distanceToWater })}</li>
+          </ul>
+          <Link to="/contact" className="btn btn-primary btn-block">
+            {t('cabinDetail.bookCta')}
+          </Link>
+        </aside>
+      </div>
     </section>
   )
 }

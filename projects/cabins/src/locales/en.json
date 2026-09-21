@@ -1,7 +1,7 @@
 {
   "site": {
-    "name": "Holiday Cabins",
-    "tagline": "Nature getaways in cozy cabins"
+    "name": "Sommen Cabins",
+    "tagline": "Nature getaways at Lake Sommen"
   },
   "nav": {
     "home": "Home",
@@ -12,33 +12,127 @@
   },
   "common": {
     "placeholder": "Content coming soon.",
-    "comingSoon": "Coming soon",
+    "comingSoon": "Photo soon",
     "viewDetails": "View details",
     "back": "Back",
     "language": "Language"
   },
   "home": {
-    "title": "Welcome to our holiday cabins",
-    "subtitle": "Rest and nature — all year round.",
-    "intro": "Discover our hand-picked cabins for your next holiday. Detailed descriptions and photos are coming soon.",
-    "ctaCabins": "Explore cabins"
+    "hero": {
+      "eyebrow": "Holiday homes at Lake Sommen",
+      "title": "Cabin and equipment — in a single booking",
+      "subtitle": "Nature-close holiday homes at Sweden's Lake Sommen. Boat, kayak, sauna and more are already included depending on the cabin.",
+      "cta": "View cabins",
+      "ctaSecondary": "How it works"
+    },
+    "concept": {
+      "title": "All included — cabin plus equipment",
+      "intro": "With us you don't just book a holiday home, but the right equipment for your active lakeside holiday too. One price, one booking, no rentals on site.",
+      "steps": [
+        {
+          "title": "Choose a cabin",
+          "text": "Find the right holiday home at Sommen — by beds, price and distance to the water."
+        },
+        {
+          "title": "Equipment included",
+          "text": "Boat, kayak, bikes or sauna are already included depending on the cabin."
+        },
+        {
+          "title": "One booking",
+          "text": "Book everything in one step — with no extra costs on site."
+        }
+      ]
+    },
+    "examples": {
+      "title": "Popular cabins",
+      "intro": "A small selection of our holiday homes at Sommen.",
+      "all": "View all cabins"
+    },
+    "why": {
+      "title": "Why Sommen?",
+      "intro": "Sommen is one of the clearest and most beautiful lakes in southern Sweden — ideal for a quiet nature holiday.",
+      "points": [
+        {
+          "title": "Crystal-clear water",
+          "text": "Bathe, fish and swim in one of the cleanest lakes in the region."
+        },
+        {
+          "title": "Over 350 islands",
+          "text": "A branching lake system to explore by boat or kayak."
+        },
+        {
+          "title": "Peace and nature",
+          "text": "Vast forests, wildlife and stillness — far from everyday life."
+        },
+        {
+          "title": "Fishing & activities",
+          "text": "Pike, perch and whitefish; plus hiking and cycling around the lake."
+        }
+      ]
+    }
   },
   "cabins": {
     "title": "Our cabins",
-    "intro": "A selection of our cabins. The content is still placeholder and will be filled in over time.",
-    "perNight": "per night",
-    "priceTbd": "Price on request"
+    "intro": "Filter by beds, price and distance to the water.",
+    "perWeek": "/ week",
+    "beds_one": "{{count}} bed",
+    "beds_other": "{{count}} beds",
+    "distanceLabel": "{{meters}} m to water",
+    "results_one": "{{count}} cabin",
+    "results_other": "{{count}} cabins",
+    "noResults": "No cabins match these filters.",
+    "filters": {
+      "title": "Filters",
+      "beds": "Beds",
+      "bedsAny": "Any",
+      "maxPrice": "Price up to",
+      "maxDistance": "Distance to water up to",
+      "reset": "Reset"
+    }
   },
   "cabinDetail": {
     "notFoundTitle": "Cabin not found",
     "notFound": "This cabin does not exist or has been removed.",
     "descriptionTitle": "Description",
-    "equipmentTitle": "Equipment",
-    "bookCta": "Send inquiry"
+    "includedTitle": "What's included",
+    "mapTitle": "Location",
+    "availabilityTitle": "Availability",
+    "bookCta": "Send inquiry",
+    "galleryAlt": "Photo {{n}}"
+  },
+  "calendar": {
+    "available": "Free",
+    "booked": "Booked",
+    "past": "Past",
+    "prev": "Previous month",
+    "next": "Next month"
+  },
+  "features": {
+    "kitchen": "Kitchen",
+    "wifi": "Wi-Fi",
+    "heating": "Heating",
+    "fireplace": "Fireplace",
+    "sauna": "Sauna",
+    "parking": "Parking",
+    "boat": "Rowing boat",
+    "kayak": "Kayak",
+    "bikes": "Bikes",
+    "grill": "Grill",
+    "dishwasher": "Dishwasher",
+    "washingMachine": "Washing machine",
+    "linens": "Bed linen & towels",
+    "pets": "Pets allowed",
+    "terrace": "Terrace",
+    "lakeAccess": "Direct lake access"
+  },
+  "cabinDescriptions": {
+    "seeblick": "Cozy holiday home right on the shore of Sommen. Set off from your own jetty by boat or kayak, and warm up in the sauna in the evening. Ideal for families who love water and nature.",
+    "waldhuette": "Quietly located cabin at the edge of the forest, a few minutes from the lake. Explore the surroundings by bike; pets are warmly welcome.",
+    "sommenblick": "Spacious house with panoramic views over Sommen. Room for up to six people, its own boat, sauna and terrace — perfect for larger groups."
   },
   "equipment": {
     "title": "Equipment",
-    "intro": "An overview of the equipment in our cabins. This list is a placeholder.",
+    "intro": "An overview of the equipment included in the booking depending on the cabin.",
     "items": {
       "kitchen": "Fully equipped kitchen",
       "wifi": "Wi-Fi",
@@ -64,7 +158,7 @@
       },
       {
         "q": "Are pets allowed?",
-        "a": "It depends on the cabin. Details to follow."
+        "a": "It depends on the cabin. You'll find details on the cabin's page."
       }
     ]
   },

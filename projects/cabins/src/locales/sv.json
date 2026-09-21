@@ -1,7 +1,7 @@
 {
   "site": {
-    "name": "Fritidsstugor",
-    "tagline": "Naturnära semester i mysiga stugor"
+    "name": "Sommen Stugor",
+    "tagline": "Naturnära semester vid sjön Sommen"
   },
   "nav": {
     "home": "Hem",
@@ -12,33 +12,127 @@
   },
   "common": {
     "placeholder": "Innehåll kommer snart.",
-    "comingSoon": "Kommer snart",
+    "comingSoon": "Foto kommer",
     "viewDetails": "Visa detaljer",
     "back": "Tillbaka",
     "language": "Språk"
   },
   "home": {
-    "title": "Välkommen till våra stugor",
-    "subtitle": "Vila och natur – året runt.",
-    "intro": "Upptäck våra handplockade stugor för din nästa semester. Detaljerade beskrivningar och bilder kommer snart.",
-    "ctaCabins": "Utforska stugor"
+    "hero": {
+      "eyebrow": "Fritidshus vid sjön Sommen",
+      "title": "Stuga och utrustning – i en och samma bokning",
+      "subtitle": "Naturnära fritidshus vid Sommen. Båt, kajak, bastu och mer ingår beroende på stuga.",
+      "cta": "Se stugor",
+      "ctaSecondary": "Så fungerar det"
+    },
+    "concept": {
+      "title": "Allt ingår – stuga plus utrustning",
+      "intro": "Hos oss bokar du inte bara ett fritidshus, utan även utrustningen för din aktiva semester vid sjön. Ett pris, en bokning, ingen uthyrning på plats.",
+      "steps": [
+        {
+          "title": "Välj stuga",
+          "text": "Hitta rätt fritidshus vid Sommen – efter bäddar, pris och närhet till vattnet."
+        },
+        {
+          "title": "Utrustning ingår",
+          "text": "Båt, kajak, cyklar eller bastu ingår beroende på stuga."
+        },
+        {
+          "title": "En bokning",
+          "text": "Boka allt i ett steg – utan extra kostnader på plats."
+        }
+      ]
+    },
+    "examples": {
+      "title": "Populära stugor",
+      "intro": "Ett litet urval av våra fritidshus vid Sommen.",
+      "all": "Se alla stugor"
+    },
+    "why": {
+      "title": "Varför Sommen?",
+      "intro": "Sommen är en av Sydsveriges klaraste och vackraste sjöar – perfekt för en lugn naturvistelse.",
+      "points": [
+        {
+          "title": "Kristallklart vatten",
+          "text": "Bada, fiska och simma i en av regionens renaste sjöar."
+        },
+        {
+          "title": "Över 350 öar",
+          "text": "Ett förgrenat sjösystem att utforska med båt eller kajak."
+        },
+        {
+          "title": "Lugn och natur",
+          "text": "Vidsträckta skogar, vilda djur och stillhet – långt från vardagen."
+        },
+        {
+          "title": "Fiske & aktiviteter",
+          "text": "Gädda, abborre och sik; dessutom vandring och cykling runt sjön."
+        }
+      ]
+    }
   },
   "cabins": {
     "title": "Våra stugor",
-    "intro": "Ett urval av våra stugor. Innehållet är fortfarande platshållare och fylls på efter hand.",
-    "perNight": "per natt",
-    "priceTbd": "Pris på förfrågan"
+    "intro": "Filtrera efter bäddar, pris och närhet till vattnet.",
+    "perWeek": "/ vecka",
+    "beds_one": "{{count}} bädd",
+    "beds_other": "{{count}} bäddar",
+    "distanceLabel": "{{meters}} m till vattnet",
+    "results_one": "{{count}} stuga",
+    "results_other": "{{count}} stugor",
+    "noResults": "Inga stugor matchar dessa filter.",
+    "filters": {
+      "title": "Filter",
+      "beds": "Bäddar",
+      "bedsAny": "Alla",
+      "maxPrice": "Pris upp till",
+      "maxDistance": "Avstånd till vattnet upp till",
+      "reset": "Återställ"
+    }
   },
   "cabinDetail": {
     "notFoundTitle": "Stugan hittades inte",
     "notFound": "Den här stugan finns inte eller har tagits bort.",
     "descriptionTitle": "Beskrivning",
-    "equipmentTitle": "Utrustning",
-    "bookCta": "Skicka förfrågan"
+    "includedTitle": "Det här ingår",
+    "mapTitle": "Läge",
+    "availabilityTitle": "Tillgänglighet",
+    "bookCta": "Skicka förfrågan",
+    "galleryAlt": "Foto {{n}}"
+  },
+  "calendar": {
+    "available": "Ledig",
+    "booked": "Bokad",
+    "past": "Passerad",
+    "prev": "Föregående månad",
+    "next": "Nästa månad"
+  },
+  "features": {
+    "kitchen": "Kök",
+    "wifi": "WiFi",
+    "heating": "Uppvärmning",
+    "fireplace": "Kamin",
+    "sauna": "Bastu",
+    "parking": "Parkering",
+    "boat": "Roddbåt",
+    "kayak": "Kajak",
+    "bikes": "Cyklar",
+    "grill": "Grill",
+    "dishwasher": "Diskmaskin",
+    "washingMachine": "Tvättmaskin",
+    "linens": "Sängkläder & handdukar",
+    "pets": "Husdjur tillåtna",
+    "terrace": "Terrass",
+    "lakeAccess": "Direkt tillgång till sjön"
+  },
+  "cabinDescriptions": {
+    "seeblick": "Mysigt fritidshus direkt vid Sommens strand. Från egen brygga ger du dig ut med båt eller kajak, och på kvällen värmer bastun. Perfekt för familjer som älskar vatten och natur.",
+    "waldhuette": "Lugnt belägen stuga vid skogsbrynet, några minuter från sjön. Med cyklar utforskar du omgivningen; husdjur är varmt välkomna.",
+    "sommenblick": "Rymligt hus med panoramautsikt över Sommen. Plats för upp till sex personer, egen båt, bastu och terrass – perfekt för större sällskap."
   },
   "equipment": {
     "title": "Utrustning",
-    "intro": "En översikt över stugornas utrustning. Listan är en platshållare.",
+    "intro": "En översikt över utrustningen som ingår i bokningen beroende på stuga.",
     "items": {
       "kitchen": "Fullt utrustat kök",
       "wifi": "WiFi",
@@ -64,7 +158,7 @@
       },
       {
         "q": "Är husdjur tillåtna?",
-        "a": "Det beror på stugan. Detaljer kommer."
+        "a": "Det beror på stugan. Detaljer finns på stugans sida."
       }
     ]
   },

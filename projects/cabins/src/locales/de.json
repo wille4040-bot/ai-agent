@@ -1,7 +1,7 @@
 {
   "site": {
-    "name": "Ferienhütten",
-    "tagline": "Natururlaub in gemütlichen Hütten"
+    "name": "Sommen Hütten",
+    "tagline": "Natururlaub am See Sommen"
   },
   "nav": {
     "home": "Startseite",
@@ -12,33 +12,127 @@
   },
   "common": {
     "placeholder": "Inhalt folgt in Kürze.",
-    "comingSoon": "Bald verfügbar",
+    "comingSoon": "Foto folgt",
     "viewDetails": "Details ansehen",
     "back": "Zurück",
     "language": "Sprache"
   },
   "home": {
-    "title": "Willkommen in unseren Ferienhütten",
-    "subtitle": "Erholung in der Natur – das ganze Jahr über.",
-    "intro": "Entdecken Sie unsere handverlesenen Hütten für Ihren nächsten Urlaub. Detaillierte Beschreibungen und Bilder folgen in Kürze.",
-    "ctaCabins": "Hütten entdecken"
+    "hero": {
+      "eyebrow": "Ferienhäuser am See Sommen",
+      "title": "Hütte und Ausrüstung – in einer einzigen Buchung",
+      "subtitle": "Naturnahe Ferienhäuser am schwedischen See Sommen. Boot, Kajak, Sauna und mehr sind je nach Hütte schon dabei.",
+      "cta": "Hütten ansehen",
+      "ctaSecondary": "So funktioniert's"
+    },
+    "concept": {
+      "title": "Alles inklusive – Hütte plus Ausrüstung",
+      "intro": "Bei uns buchen Sie nicht nur ein Ferienhaus, sondern gleich die passende Ausrüstung für Ihren Aktivurlaub am See. Ein Preis, eine Buchung, kein Verleih vor Ort.",
+      "steps": [
+        {
+          "title": "Hütte wählen",
+          "text": "Finden Sie das passende Ferienhaus am Sommen – nach Betten, Preis und Nähe zum Wasser."
+        },
+        {
+          "title": "Ausrüstung inklusive",
+          "text": "Boot, Kajak, Fahrräder oder Sauna sind je nach Hütte schon enthalten."
+        },
+        {
+          "title": "Eine Buchung",
+          "text": "Alles zusammen in einem Schritt buchen – ohne Zusatzkosten vor Ort."
+        }
+      ]
+    },
+    "examples": {
+      "title": "Beliebte Hütten",
+      "intro": "Eine kleine Auswahl unserer Ferienhäuser am Sommen.",
+      "all": "Alle Hütten ansehen"
+    },
+    "why": {
+      "title": "Warum Sommen?",
+      "intro": "Der Sommen ist einer der klarsten und schönsten Seen Südschwedens – ideal für einen ruhigen Natururlaub.",
+      "points": [
+        {
+          "title": "Kristallklares Wasser",
+          "text": "Baden, angeln und schwimmen in einem der saubersten Seen der Region."
+        },
+        {
+          "title": "Über 350 Inseln",
+          "text": "Ein verzweigtes Seensystem zum Erkunden mit Boot oder Kajak."
+        },
+        {
+          "title": "Ruhe und Natur",
+          "text": "Weite Wälder, Wildtiere und Stille – weit weg vom Alltag."
+        },
+        {
+          "title": "Angeln & Aktivitäten",
+          "text": "Hecht, Barsch und Felchen; dazu Wandern und Radfahren rund um den See."
+        }
+      ]
+    }
   },
   "cabins": {
     "title": "Unsere Hütten",
-    "intro": "Eine Auswahl unserer Hütten. Die Inhalte sind noch Platzhalter und werden nach und nach ergänzt.",
-    "perNight": "pro Nacht",
-    "priceTbd": "Preis auf Anfrage"
+    "intro": "Filtern Sie nach Betten, Preis und Nähe zum Wasser.",
+    "perWeek": "/ Woche",
+    "beds_one": "{{count}} Bett",
+    "beds_other": "{{count}} Betten",
+    "distanceLabel": "{{meters}} m zum Wasser",
+    "results_one": "{{count}} Hütte",
+    "results_other": "{{count}} Hütten",
+    "noResults": "Keine Hütten passen zu diesen Filtern.",
+    "filters": {
+      "title": "Filter",
+      "beds": "Betten",
+      "bedsAny": "Alle",
+      "maxPrice": "Preis bis",
+      "maxDistance": "Entfernung zum Wasser bis",
+      "reset": "Zurücksetzen"
+    }
   },
   "cabinDetail": {
     "notFoundTitle": "Hütte nicht gefunden",
     "notFound": "Diese Hütte existiert nicht oder wurde entfernt.",
     "descriptionTitle": "Beschreibung",
-    "equipmentTitle": "Ausstattung",
-    "bookCta": "Anfrage senden"
+    "includedTitle": "Das ist inklusive",
+    "mapTitle": "Lage",
+    "availabilityTitle": "Verfügbarkeit",
+    "bookCta": "Jetzt anfragen",
+    "galleryAlt": "Foto {{n}}"
+  },
+  "calendar": {
+    "available": "Frei",
+    "booked": "Belegt",
+    "past": "Vergangen",
+    "prev": "Voriger Monat",
+    "next": "Nächster Monat"
+  },
+  "features": {
+    "kitchen": "Küche",
+    "wifi": "WLAN",
+    "heating": "Heizung",
+    "fireplace": "Kamin",
+    "sauna": "Sauna",
+    "parking": "Parkplatz",
+    "boat": "Ruderboot",
+    "kayak": "Kajak",
+    "bikes": "Fahrräder",
+    "grill": "Grill",
+    "dishwasher": "Spülmaschine",
+    "washingMachine": "Waschmaschine",
+    "linens": "Bettwäsche & Handtücher",
+    "pets": "Haustiere erlaubt",
+    "terrace": "Terrasse",
+    "lakeAccess": "Direkter Seezugang"
+  },
+  "cabinDescriptions": {
+    "seeblick": "Gemütliches Ferienhaus direkt am Ufer des Sommen. Vom eigenen Steg starten Sie mit Boot oder Kajak, abends wärmt die Sauna. Ideal für Familien, die Wasser und Natur lieben.",
+    "waldhuette": "Ruhig gelegene Hütte am Waldrand, wenige Minuten vom See entfernt. Mit Fahrrädern erkunden Sie die Umgebung; Haustiere sind herzlich willkommen.",
+    "sommenblick": "Großzügiges Haus mit Panoramablick auf den Sommen. Platz für bis zu sechs Personen, eigenes Boot, Sauna und Terrasse – perfekt für größere Gruppen."
   },
   "equipment": {
     "title": "Ausstattung",
-    "intro": "Ein Überblick über die Ausstattung unserer Hütten. Diese Liste ist ein Platzhalter.",
+    "intro": "Ein Überblick über die Ausrüstung, die je nach Hütte in der Buchung enthalten ist.",
     "items": {
       "kitchen": "Voll ausgestattete Küche",
       "wifi": "WLAN",
@@ -64,7 +158,7 @@
       },
       {
         "q": "Sind Haustiere erlaubt?",
-        "a": "Das hängt von der jeweiligen Hütte ab. Details folgen."
+        "a": "Das hängt von der jeweiligen Hütte ab. Details finden Sie auf der Hüttenseite."
       }
     ]
   },
