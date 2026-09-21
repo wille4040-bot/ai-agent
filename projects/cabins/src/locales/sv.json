@@ -116,6 +116,10 @@
       "intro": "Ett litet urval av våra fritidshus vid Sommen.",
       "all": "Se alla stugor"
     },
+    "map": {
+      "title": "Stugorna vid Sommen",
+      "intro": "Klicka på en stuga på kartan för att läsa mer."
+    },
     "why": {
       "title": "Varför Sommen?",
       "intro": "Sommen är en av Sydsveriges klaraste och vackraste sjöar – perfekt för en lugn naturvistelse.",

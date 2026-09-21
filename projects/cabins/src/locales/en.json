@@ -116,6 +116,10 @@
       "intro": "A small selection of our holiday homes at Sommen.",
       "all": "View all cabins"
     },
+    "map": {
+      "title": "The cabins at Sommen",
+      "intro": "Click a cabin on the map to learn more."
+    },
     "why": {
       "title": "Why Sommen?",
       "intro": "Sommen is one of the clearest and most beautiful lakes in southern Sweden — ideal for a quiet nature holiday.",
