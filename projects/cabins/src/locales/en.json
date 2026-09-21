@@ -1,0 +1,74 @@
+{
+  "site": {
+    "name": "Holiday Cabins",
+    "tagline": "Nature getaways in cozy cabins"
+  },
+  "nav": {
+    "home": "Home",
+    "cabins": "Cabins",
+    "equipment": "Equipment",
+    "about": "About",
+    "contact": "Contact & FAQ"
+  },
+  "common": {
+    "placeholder": "Content coming soon.",
+    "comingSoon": "Coming soon",
+    "viewDetails": "View details",
+    "back": "Back",
+    "language": "Language"
+  },
+  "home": {
+    "title": "Welcome to our holiday cabins",
+    "subtitle": "Rest and nature — all year round.",
+    "intro": "Discover our hand-picked cabins for your next holiday. Detailed descriptions and photos are coming soon.",
+    "ctaCabins": "Explore cabins"
+  },
+  "cabins": {
+    "title": "Our cabins",
+    "intro": "A selection of our cabins. The content is still placeholder and will be filled in over time.",
+    "perNight": "per night",
+    "priceTbd": "Price on request"
+  },
+  "cabinDetail": {
+    "notFoundTitle": "Cabin not found",
+    "notFound": "This cabin does not exist or has been removed.",
+    "descriptionTitle": "Description",
+    "equipmentTitle": "Equipment",
+    "bookCta": "Send inquiry"
+  },
+  "equipment": {
+    "title": "Equipment",
+    "intro": "An overview of the equipment in our cabins. This list is a placeholder.",
+    "items": {
+      "kitchen": "Fully equipped kitchen",
+      "wifi": "Wi-Fi",
+      "heating": "Heating / fireplace",
+      "parking": "Parking",
+      "sauna": "Sauna",
+      "pets": "Pets welcome"
+    }
+  },
+  "about": {
+    "title": "About us",
+    "body": "We'll soon tell you more about us and our cabins. This text is a placeholder."
+  },
+  "contact": {
+    "title": "Contact & FAQ",
+    "contactTitle": "Contact",
+    "contactBody": "Email and phone number coming soon.",
+    "faqTitle": "Frequently asked questions",
+    "faq": [
+      {
+        "q": "How can I book a cabin?",
+        "a": "The booking flow will be available soon."
+      },
+      {
+        "q": "Are pets allowed?",
+        "a": "It depends on the cabin. Details to follow."
+      }
+    ]
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  }
+}

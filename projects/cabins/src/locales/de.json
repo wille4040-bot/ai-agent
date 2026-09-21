@@ -1,0 +1,74 @@
+{
+  "site": {
+    "name": "Ferienhütten",
+    "tagline": "Natururlaub in gemütlichen Hütten"
+  },
+  "nav": {
+    "home": "Startseite",
+    "cabins": "Hütten",
+    "equipment": "Ausstattung",
+    "about": "Über uns",
+    "contact": "Kontakt & FAQ"
+  },
+  "common": {
+    "placeholder": "Inhalt folgt in Kürze.",
+    "comingSoon": "Bald verfügbar",
+    "viewDetails": "Details ansehen",
+    "back": "Zurück",
+    "language": "Sprache"
+  },
+  "home": {
+    "title": "Willkommen in unseren Ferienhütten",
+    "subtitle": "Erholung in der Natur – das ganze Jahr über.",
+    "intro": "Entdecken Sie unsere handverlesenen Hütten für Ihren nächsten Urlaub. Detaillierte Beschreibungen und Bilder folgen in Kürze.",
+    "ctaCabins": "Hütten entdecken"
+  },
+  "cabins": {
+    "title": "Unsere Hütten",
+    "intro": "Eine Auswahl unserer Hütten. Die Inhalte sind noch Platzhalter und werden nach und nach ergänzt.",
+    "perNight": "pro Nacht",
+    "priceTbd": "Preis auf Anfrage"
+  },
+  "cabinDetail": {
+    "notFoundTitle": "Hütte nicht gefunden",
+    "notFound": "Diese Hütte existiert nicht oder wurde entfernt.",
+    "descriptionTitle": "Beschreibung",
+    "equipmentTitle": "Ausstattung",
+    "bookCta": "Anfrage senden"
+  },
+  "equipment": {
+    "title": "Ausstattung",
+    "intro": "Ein Überblick über die Ausstattung unserer Hütten. Diese Liste ist ein Platzhalter.",
+    "items": {
+      "kitchen": "Voll ausgestattete Küche",
+      "wifi": "WLAN",
+      "heating": "Heizung / Kamin",
+      "parking": "Parkplatz",
+      "sauna": "Sauna",
+      "pets": "Haustiere willkommen"
+    }
+  },
+  "about": {
+    "title": "Über uns",
+    "body": "Hier erzählen wir bald mehr über uns und unsere Hütten. Dieser Text ist ein Platzhalter."
+  },
+  "contact": {
+    "title": "Kontakt & FAQ",
+    "contactTitle": "Kontakt",
+    "contactBody": "E-Mail und Telefonnummer folgen in Kürze.",
+    "faqTitle": "Häufige Fragen",
+    "faq": [
+      {
+        "q": "Wie kann ich eine Hütte buchen?",
+        "a": "Der Buchungsvorgang wird bald verfügbar sein."
+      },
+      {
+        "q": "Sind Haustiere erlaubt?",
+        "a": "Das hängt von der jeweiligen Hütte ab. Details folgen."
+      }
+    ]
+  },
+  "footer": {
+    "rights": "Alle Rechte vorbehalten."
+  }
+}

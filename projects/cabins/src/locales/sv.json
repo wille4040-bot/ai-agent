@@ -1,0 +1,74 @@
+{
+  "site": {
+    "name": "Fritidsstugor",
+    "tagline": "Naturnära semester i mysiga stugor"
+  },
+  "nav": {
+    "home": "Hem",
+    "cabins": "Stugor",
+    "equipment": "Utrustning",
+    "about": "Om oss",
+    "contact": "Kontakt & FAQ"
+  },
+  "common": {
+    "placeholder": "Innehåll kommer snart.",
+    "comingSoon": "Kommer snart",
+    "viewDetails": "Visa detaljer",
+    "back": "Tillbaka",
+    "language": "Språk"
+  },
+  "home": {
+    "title": "Välkommen till våra stugor",
+    "subtitle": "Vila och natur – året runt.",
+    "intro": "Upptäck våra handplockade stugor för din nästa semester. Detaljerade beskrivningar och bilder kommer snart.",
+    "ctaCabins": "Utforska stugor"
+  },
+  "cabins": {
+    "title": "Våra stugor",
+    "intro": "Ett urval av våra stugor. Innehållet är fortfarande platshållare och fylls på efter hand.",
+    "perNight": "per natt",
+    "priceTbd": "Pris på förfrågan"
+  },
+  "cabinDetail": {
+    "notFoundTitle": "Stugan hittades inte",
+    "notFound": "Den här stugan finns inte eller har tagits bort.",
+    "descriptionTitle": "Beskrivning",
+    "equipmentTitle": "Utrustning",
+    "bookCta": "Skicka förfrågan"
+  },
+  "equipment": {
+    "title": "Utrustning",
+    "intro": "En översikt över stugornas utrustning. Listan är en platshållare.",
+    "items": {
+      "kitchen": "Fullt utrustat kök",
+      "wifi": "WiFi",
+      "heating": "Uppvärmning / kamin",
+      "parking": "Parkering",
+      "sauna": "Bastu",
+      "pets": "Husdjur välkomna"
+    }
+  },
+  "about": {
+    "title": "Om oss",
+    "body": "Här berättar vi snart mer om oss och våra stugor. Den här texten är en platshållare."
+  },
+  "contact": {
+    "title": "Kontakt & FAQ",
+    "contactTitle": "Kontakt",
+    "contactBody": "E-post och telefonnummer kommer snart.",
+    "faqTitle": "Vanliga frågor",
+    "faq": [
+      {
+        "q": "Hur bokar jag en stuga?",
+        "a": "Bokningsflödet kommer snart att vara tillgängligt."
+      },
+      {
+        "q": "Är husdjur tillåtna?",
+        "a": "Det beror på stugan. Detaljer kommer."
+      }
+    ]
+  },
+  "footer": {
+    "rights": "Alla rättigheter förbehållna."
+  }
+}
