@@ -3,6 +3,7 @@ import { Outlet, useLocation } from 'react-router-dom'
 
 import Navbar from './Navbar.jsx'
 import Footer from './Footer.jsx'
+import CookieNotice from './CookieNotice.jsx'
 
 export default function Layout() {
   const { pathname } = useLocation()
@@ -19,6 +20,7 @@ export default function Layout() {
         <Outlet />
       </main>
       <Footer />
+      <CookieNotice />
     </div>
   )
 }

@@ -46,6 +46,10 @@
     "dogs": {
       "title": "Hundefreundliche Ferienhäuser am See Sommen",
       "description": "Urlaub mit Hund am Sommen: hundefreundliche Ferienhütten in Naturlage. Haustiere willkommen, ohne Aufpreis – jetzt buchen."
+    },
+    "privacy": {
+      "title": "Datenschutzerklärung",
+      "description": "Informationen zur Verarbeitung Ihrer personenbezogenen Daten bei Buchung und Kontakt gemäß DSGVO."
     }
   },
   "landing": {
@@ -276,22 +280,119 @@
   },
   "about": {
     "title": "Über uns",
-    "body": "Hier erzählen wir bald mehr über uns und unsere Hütten. Dieser Text ist ein Platzhalter."
+    "lead": "Wir vermieten Ferienhütten am See Sommen – mit einer einfachen Idee: Hütte und Ausrüstung in einer einzigen Buchung, damit Sie sofort in den Urlaub starten können.",
+    "sections": [
+      {
+        "heading": "Unsere Idee",
+        "body": "Viele Ferienhäuser lassen Sie mit der Frage allein, wie Sie ans Boot, ans Fahrrad oder in die Sauna kommen. Bei uns gehört die passende Ausrüstung zur Hütte – ohne Verleih vor Ort und ohne Zusatzkosten. Ein Preis, eine Buchung."
+      },
+      {
+        "heading": "Der See Sommen",
+        "body": "Der Sommen liegt in Südschweden zwischen Tranås und Boxholm – ein klarer, verzweigter See mit über 350 Inseln. Ideal zum Baden, Angeln, Paddeln und für lange Spaziergänge durch stille Wälder."
+      },
+      {
+        "heading": "Persönlich betreut",
+        "body": "Wir kennen jede unserer Hütten selbst. Vor Ihrer Anreise erhalten Sie alle Infos zu Adresse, Anfahrt und Schlüsselübergabe – und bei Fragen sind wir persönlich für Sie da."
+      }
+    ]
   },
   "contact": {
     "title": "Kontakt & FAQ",
-    "contactTitle": "Kontakt",
-    "contactBody": "E-Mail und Telefonnummer folgen in Kürze.",
+    "intro": "Haben Sie Fragen zu einer Hütte, zur Buchung oder zur Anreise? Schreiben Sie uns – wir antworten in der Regel innerhalb von 24 Stunden.",
+    "info": {
+      "title": "So erreichen Sie uns",
+      "emailLabel": "E-Mail",
+      "email": "hallo@sommen-huetten.example",
+      "phoneLabel": "Telefon",
+      "phone": "+46 70 000 00 00",
+      "addressLabel": "Adresse",
+      "address": "Sommen Hütten, 573 96 Tranås, Schweden",
+      "hoursLabel": "Erreichbarkeit",
+      "hours": "Mo–Fr 9–17 Uhr (MEZ)"
+    },
+    "form": {
+      "title": "Nachricht senden",
+      "name": "Name",
+      "email": "E-Mail",
+      "subject": "Betreff",
+      "message": "Nachricht",
+      "send": "Nachricht senden",
+      "sending": "Wird gesendet …",
+      "success": "Vielen Dank! Ihre Nachricht wurde gesendet. Wir melden uns bald.",
+      "errName": "Bitte geben Sie Ihren Namen ein.",
+      "errEmail": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
+      "errMessage": "Bitte schreiben Sie eine Nachricht.",
+      "errFailed": "Die Nachricht konnte nicht gesendet werden. Bitte versuchen Sie es erneut.",
+      "fallback": "Bitte schreiben Sie uns direkt an:",
+      "privacy": "Mit dem Absenden stimmen Sie der Verarbeitung Ihrer Angaben gemäß unserer Datenschutzerklärung zu."
+    },
     "faqTitle": "Häufige Fragen",
     "faq": [
       {
-        "q": "Wie kann ich eine Hütte buchen?",
-        "a": "Der Buchungsvorgang wird bald verfügbar sein."
+        "q": "Wie läuft der Check-in und Check-out ab?",
+        "a": "Check-in ist ab 15:00 Uhr, Check-out bis 11:00 Uhr. Abweichende Zeiten sind nach Absprache oft möglich."
+      },
+      {
+        "q": "Wie funktioniert die Schlüsselübergabe?",
+        "a": "Einige Tage vor der Anreise erhalten Sie eine E-Mail mit Adresse, Anfahrt und Schlüsselübergabe. Je nach Hütte liegt der Schlüssel in einem Schlüsseltresor oder wird persönlich übergeben."
+      },
+      {
+        "q": "Was ist im Preis enthalten?",
+        "a": "Die Hütte plus die bei der jeweiligen Hütte angegebene Ausrüstung – zum Beispiel Boot, Kajak oder Sauna. Bettwäsche und Handtücher sind inklusive."
+      },
+      {
+        "q": "Ist die Endreinigung inbegriffen?",
+        "a": "Ja, die Endreinigung ist im Preis enthalten. Wir bitten Sie lediglich, die Hütte besenrein zu hinterlassen sowie Geschirr und Müll zu entsorgen."
       },
       {
         "q": "Sind Haustiere erlaubt?",
-        "a": "Das hängt von der jeweiligen Hütte ab. Details finden Sie auf der Hüttenseite."
+        "a": "In unseren hundefreundlichen Hütten sind Haustiere ohne Aufpreis willkommen. Eine Übersicht finden Sie auf der Seite „Mit Hund“."
+      },
+      {
+        "q": "Welche Stornobedingungen gelten?",
+        "a": "Bis 30 Tage vor Anreise ist eine kostenfreie Stornierung möglich. Danach berechnen wir einen Teil des Betrags. Kontaktieren Sie uns bitte so früh wie möglich."
+      },
+      {
+        "q": "Welche Zahlungsarten werden akzeptiert?",
+        "a": "Sie zahlen sicher mit Kreditkarte, Klarna oder SEPA-Lastschrift über Stripe."
+      },
+      {
+        "q": "Gibt es WLAN?",
+        "a": "Ja, alle Hütten verfügen über WLAN."
       }
     ]
+  },
+  "legal": {
+    "privacy": "Datenschutz",
+    "cookieText": "Diese Website verwendet nur technisch notwendigen lokalen Speicher (z. B. für Ihre Sprachwahl). Es findet kein Tracking und keine Weitergabe an Dritte statt.",
+    "cookieAccept": "Verstanden",
+    "cookieMore": "Mehr erfahren"
+  },
+  "privacyPage": {
+    "title": "Datenschutzerklärung",
+    "intro": "Der Schutz Ihrer personenbezogenen Daten ist uns wichtig. Diese Erklärung informiert Sie gemäß DSGVO über die Verarbeitung Ihrer Daten.",
+    "sections": [
+      {
+        "heading": "Verantwortlicher",
+        "body": "Sommen Hütten, 573 96 Tranås, Schweden, E-Mail: hallo@sommen-huetten.example. (Bitte durch Ihre echten Angaben ersetzen.)"
+      },
+      {
+        "heading": "Welche Daten wir verarbeiten",
+        "body": "Bei einer Buchung verarbeiten wir Name, E-Mail-Adresse sowie Buchungs- und Zahlungsdaten, soweit für die Vertragserfüllung erforderlich. Bei einer Kontaktanfrage verarbeiten wir die von Ihnen angegebenen Daten zur Beantwortung Ihrer Anfrage."
+      },
+      {
+        "heading": "Zahlungsabwicklung",
+        "body": "Die Zahlung erfolgt über Stripe. Dabei werden die für die Zahlung nötigen Daten an Stripe übermittelt. Es gelten die Datenschutzbestimmungen von Stripe."
+      },
+      {
+        "heading": "Cookies und lokaler Speicher",
+        "body": "Wir verwenden ausschließlich technisch notwendigen lokalen Speicher (z. B. für Ihre Sprachwahl). Es werden keine Tracking- oder Marketing-Cookies gesetzt."
+      },
+      {
+        "heading": "Ihre Rechte",
+        "body": "Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung sowie Datenübertragbarkeit. Wenden Sie sich dazu an die oben genannte Kontaktadresse."
+      }
+    ],
+    "note": "Hinweis: Dies ist eine Vorlage. Bitte vor der Veröffentlichung rechtlich prüfen und mit Ihren echten Angaben (inkl. Impressum) ergänzen."
   }
 }

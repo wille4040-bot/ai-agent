@@ -46,6 +46,10 @@
     "dogs": {
       "title": "Dog-friendly holiday homes at Lake Sommen",
       "description": "Holiday with a dog at Sommen: dog-friendly cabins in a natural setting. Pets welcome at no extra cost — book now."
+    },
+    "privacy": {
+      "title": "Privacy policy",
+      "description": "Information on the processing of your personal data for booking and contact under the GDPR."
     }
   },
   "landing": {
@@ -272,23 +276,120 @@
   },
   "about": {
     "title": "About us",
-    "body": "We'll soon tell you more about us and our cabins. This text is a placeholder."
+    "lead": "We rent holiday cabins at Lake Sommen — with one simple idea: cabin and equipment in a single booking, so you can start your holiday right away.",
+    "sections": [
+      {
+        "heading": "Our idea",
+        "body": "Many holiday homes leave you wondering how to get to the boat, the bike or the sauna. With us, the right equipment comes with the cabin — no rentals on site, no extra costs. One price, one booking."
+      },
+      {
+        "heading": "Lake Sommen",
+        "body": "Sommen lies in southern Sweden between Tranås and Boxholm — a clear, branching lake with over 350 islands. Ideal for swimming, fishing, paddling and long walks through quiet forests."
+      },
+      {
+        "heading": "Personally looked after",
+        "body": "We know each of our cabins ourselves. Before your arrival you receive all the details on address, directions and key handover — and if you have questions, we're personally there for you."
+      }
+    ]
   },
   "contact": {
     "title": "Contact & FAQ",
-    "contactTitle": "Contact",
-    "contactBody": "Email and phone number coming soon.",
+    "intro": "Questions about a cabin, your booking or your arrival? Write to us — we usually reply within 24 hours.",
+    "info": {
+      "title": "How to reach us",
+      "emailLabel": "Email",
+      "email": "hallo@sommen-huetten.example",
+      "phoneLabel": "Phone",
+      "phone": "+46 70 000 00 00",
+      "addressLabel": "Address",
+      "address": "Sommen Cabins, 573 96 Tranås, Sweden",
+      "hoursLabel": "Availability",
+      "hours": "Mon–Fri 9am–5pm (CET)"
+    },
+    "form": {
+      "title": "Send a message",
+      "name": "Name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message",
+      "send": "Send message",
+      "sending": "Sending …",
+      "success": "Thank you! Your message has been sent. We'll be in touch soon.",
+      "errName": "Please enter your name.",
+      "errEmail": "Please enter a valid email address.",
+      "errMessage": "Please write a message.",
+      "errFailed": "The message could not be sent. Please try again.",
+      "fallback": "Please email us directly:",
+      "privacy": "By submitting you agree to the processing of your data in accordance with our privacy policy."
+    },
     "faqTitle": "Frequently asked questions",
     "faq": [
       {
-        "q": "How can I book a cabin?",
-        "a": "The booking flow will be available soon."
+        "q": "How do check-in and check-out work?",
+        "a": "Check-in is from 3:00pm, check-out by 11:00am. Other times can often be arranged by agreement."
+      },
+      {
+        "q": "How does the key handover work?",
+        "a": "A few days before arrival you receive an email with the address, directions and key handover. Depending on the cabin, the key is in a lockbox or handed over in person."
+      },
+      {
+        "q": "What's included in the price?",
+        "a": "The cabin plus the equipment listed for that cabin — for example a boat, kayak or sauna. Bed linen and towels are included."
+      },
+      {
+        "q": "Is the final cleaning included?",
+        "a": "Yes, the final cleaning is included in the price. We only ask that you leave the cabin swept and take care of dishes and rubbish."
       },
       {
         "q": "Are pets allowed?",
-        "a": "It depends on the cabin. You'll find details on the cabin's page."
+        "a": "In our dog-friendly cabins, pets are welcome at no extra cost. You'll find an overview on the \"With dog\" page."
+      },
+      {
+        "q": "What is the cancellation policy?",
+        "a": "Free cancellation is possible up to 30 days before arrival. After that we charge part of the amount. Please contact us as early as possible."
+      },
+      {
+        "q": "Which payment methods are accepted?",
+        "a": "You pay securely by card, Klarna or SEPA direct debit via Stripe."
+      },
+      {
+        "q": "Is there Wi-Fi?",
+        "a": "Yes, all cabins have Wi-Fi."
       }
     ]
+  },
+  "legal": {
+    "privacy": "Privacy",
+    "cookieText": "This website only uses technically necessary local storage (e.g. for your language choice). No tracking and no sharing with third parties.",
+    "cookieAccept": "Got it",
+    "cookieMore": "Learn more"
+  },
+  "privacyPage": {
+    "title": "Privacy policy",
+    "intro": "Protecting your personal data is important to us. This policy informs you, in line with the GDPR, about how we process your data.",
+    "sections": [
+      {
+        "heading": "Controller",
+        "body": "Sommen Cabins, 573 96 Tranås, Sweden, email: hallo@sommen-huetten.example. (Please replace with your real details.)"
+      },
+      {
+        "heading": "What data we process",
+        "body": "For a booking we process your name, email address and booking/payment data as needed to fulfil the contract. For a contact request we process the data you provide to answer your enquiry."
+      },
+      {
+        "heading": "Payment processing",
+        "body": "Payment is handled by Stripe. The data required for payment is transmitted to Stripe. Stripe's privacy terms apply."
+      },
+      {
+        "heading": "Cookies and local storage",
+        "body": "We use only technically necessary local storage (e.g. for your language choice). No tracking or marketing cookies are set."
+      },
+      {
+        "heading": "Your rights",
+        "body": "You have the right to access, rectification, erasure, restriction of processing and data portability. Please contact the address above to exercise these."
+      }
+    ],
+    "note": "Note: This is a template. Please have it reviewed legally before publishing and complete it with your real details."
   },
   "footer": {
     "exploreTitle": "Explore",

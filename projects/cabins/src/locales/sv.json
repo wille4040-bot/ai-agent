@@ -46,6 +46,10 @@
     "dogs": {
       "title": "Hundvänliga stugor vid sjön Sommen",
       "description": "Semester med hund vid Sommen: hundvänliga stugor i naturskönt läge. Husdjur välkomna utan extra kostnad – boka nu."
+    },
+    "privacy": {
+      "title": "Integritetspolicy",
+      "description": "Information om behandlingen av dina personuppgifter vid bokning och kontakt enligt GDPR."
     }
   },
   "landing": {
@@ -272,23 +276,120 @@
   },
   "about": {
     "title": "Om oss",
-    "body": "Här berättar vi snart mer om oss och våra stugor. Den här texten är en platshållare."
+    "lead": "Vi hyr ut fritidshus vid sjön Sommen – med en enkel idé: stuga och utrustning i en och samma bokning, så att du kan börja semestern direkt.",
+    "sections": [
+      {
+        "heading": "Vår idé",
+        "body": "Många fritidshus lämnar dig ensam med frågan hur du får tag på båt, cykel eller bastu. Hos oss ingår rätt utrustning i stugan – ingen uthyrning på plats, inga extra kostnader. Ett pris, en bokning."
+      },
+      {
+        "heading": "Sjön Sommen",
+        "body": "Sommen ligger i Sydsverige mellan Tranås och Boxholm – en klar, förgrenad sjö med över 350 öar. Perfekt för bad, fiske, paddling och långa promenader genom tysta skogar."
+      },
+      {
+        "heading": "Personlig service",
+        "body": "Vi känner var och en av våra stugor själva. Före din ankomst får du all information om adress, vägbeskrivning och nyckelöverlämning – och vid frågor finns vi personligen till hands."
+      }
+    ]
   },
   "contact": {
     "title": "Kontakt & FAQ",
-    "contactTitle": "Kontakt",
-    "contactBody": "E-post och telefonnummer kommer snart.",
+    "intro": "Har du frågor om en stuga, om bokningen eller om ankomsten? Skriv till oss – vi svarar oftast inom 24 timmar.",
+    "info": {
+      "title": "Så når du oss",
+      "emailLabel": "E-post",
+      "email": "hallo@sommen-huetten.example",
+      "phoneLabel": "Telefon",
+      "phone": "+46 70 000 00 00",
+      "addressLabel": "Adress",
+      "address": "Sommen Stugor, 573 96 Tranås, Sverige",
+      "hoursLabel": "Tillgänglighet",
+      "hours": "Mån–fre 9–17 (CET)"
+    },
+    "form": {
+      "title": "Skicka meddelande",
+      "name": "Namn",
+      "email": "E-post",
+      "subject": "Ämne",
+      "message": "Meddelande",
+      "send": "Skicka meddelande",
+      "sending": "Skickar …",
+      "success": "Tack! Ditt meddelande har skickats. Vi hör av oss snart.",
+      "errName": "Ange ditt namn.",
+      "errEmail": "Ange en giltig e-postadress.",
+      "errMessage": "Skriv ett meddelande.",
+      "errFailed": "Meddelandet kunde inte skickas. Försök igen.",
+      "fallback": "Skriv gärna direkt till oss:",
+      "privacy": "Genom att skicka godkänner du att vi behandlar dina uppgifter enligt vår integritetspolicy."
+    },
     "faqTitle": "Vanliga frågor",
     "faq": [
       {
-        "q": "Hur bokar jag en stuga?",
-        "a": "Bokningsflödet kommer snart att vara tillgängligt."
+        "q": "Hur fungerar in- och utcheckning?",
+        "a": "Incheckning från kl. 15:00, utcheckning senast kl. 11:00. Andra tider går ofta att ordna efter överenskommelse."
+      },
+      {
+        "q": "Hur går nyckelöverlämningen till?",
+        "a": "Några dagar före ankomst får du ett mejl med adress, vägbeskrivning och nyckelöverlämning. Beroende på stuga ligger nyckeln i ett nyckelskåp eller lämnas personligen."
+      },
+      {
+        "q": "Vad ingår i priset?",
+        "a": "Stugan plus den utrustning som anges för respektive stuga – till exempel båt, kajak eller bastu. Sängkläder och handdukar ingår."
+      },
+      {
+        "q": "Ingår slutstädning?",
+        "a": "Ja, slutstädning ingår i priset. Vi ber dig bara lämna stugan sopad samt diska och slänga soporna."
       },
       {
         "q": "Är husdjur tillåtna?",
-        "a": "Det beror på stugan. Detaljer finns på stugans sida."
+        "a": "I våra hundvänliga stugor är husdjur välkomna utan extra kostnad. En översikt finns på sidan ”Med hund”."
+      },
+      {
+        "q": "Vilka avbokningsvillkor gäller?",
+        "a": "Fram till 30 dagar före ankomst är avbokning kostnadsfri. Därefter debiterar vi en del av beloppet. Kontakta oss så tidigt som möjligt."
+      },
+      {
+        "q": "Vilka betalsätt accepteras?",
+        "a": "Du betalar säkert med kort, Klarna eller SEPA-autogiro via Stripe."
+      },
+      {
+        "q": "Finns det WiFi?",
+        "a": "Ja, alla stugor har WiFi."
       }
     ]
+  },
+  "legal": {
+    "privacy": "Integritet",
+    "cookieText": "Den här webbplatsen använder endast tekniskt nödvändig lokal lagring (t.ex. för ditt språkval). Ingen spårning och ingen delning med tredje part.",
+    "cookieAccept": "Jag förstår",
+    "cookieMore": "Läs mer"
+  },
+  "privacyPage": {
+    "title": "Integritetspolicy",
+    "intro": "Skyddet av dina personuppgifter är viktigt för oss. Denna policy informerar enligt GDPR om hur vi behandlar dina uppgifter.",
+    "sections": [
+      {
+        "heading": "Personuppgiftsansvarig",
+        "body": "Sommen Stugor, 573 96 Tranås, Sverige, e-post: hallo@sommen-huetten.example. (Ersätt med dina riktiga uppgifter.)"
+      },
+      {
+        "heading": "Vilka uppgifter vi behandlar",
+        "body": "Vid en bokning behandlar vi namn, e-postadress samt boknings- och betaluppgifter i den mån det behövs för att fullgöra avtalet. Vid en kontaktförfrågan behandlar vi de uppgifter du anger för att besvara din förfrågan."
+      },
+      {
+        "heading": "Betalning",
+        "body": "Betalningen sker via Stripe. De uppgifter som behövs för betalningen överförs till Stripe. Stripes integritetsvillkor gäller."
+      },
+      {
+        "heading": "Cookies och lokal lagring",
+        "body": "Vi använder endast tekniskt nödvändig lokal lagring (t.ex. för ditt språkval). Inga spårnings- eller marknadsföringscookies används."
+      },
+      {
+        "heading": "Dina rättigheter",
+        "body": "Du har rätt till tillgång, rättelse, radering, begränsning av behandling samt dataportabilitet. Kontakta adressen ovan för detta."
+      }
+    ],
+    "note": "Obs: Detta är en mall. Låt granska den juridiskt före publicering och komplettera med dina riktiga uppgifter."
   },
   "footer": {
     "exploreTitle": "Upptäck",

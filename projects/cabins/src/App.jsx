@@ -12,6 +12,7 @@ import BookingSuccess from './pages/BookingSuccess.jsx'
 import BookingCancelled from './pages/BookingCancelled.jsx'
 import FishingLanding from './pages/FishingLanding.jsx'
 import DogsLanding from './pages/DogsLanding.jsx'
+import PrivacyPolicy from './pages/PrivacyPolicy.jsx'
 import NotFound from './pages/NotFound.jsx'
 
 export default function App() {
@@ -29,6 +30,7 @@ export default function App() {
         <Route path="booking/cancelled" element={<BookingCancelled />} />
         <Route path="angeln" element={<FishingLanding />} />
         <Route path="hunde" element={<DogsLanding />} />
+        <Route path="datenschutz" element={<PrivacyPolicy />} />
         <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>

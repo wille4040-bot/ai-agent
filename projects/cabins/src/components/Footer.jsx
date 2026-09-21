@@ -33,9 +33,11 @@ export default function Footer() {
 
       <div className="footer-bottom">
         <span>
-          © {year} {t('site.name')}
+          © {year} {t('site.name')} · {t('footer.rights')}
         </span>
-        <span className="footer-muted">{t('footer.rights')}</span>
+        <Link to="/datenschutz" className="footer-link">
+          {t('privacyPage.title')}
+        </Link>
       </div>
     </footer>
   )

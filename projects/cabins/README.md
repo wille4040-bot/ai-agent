@@ -78,6 +78,7 @@ ingen gästinformation).
    supabase functions deploy create-checkout
    supabase functions deploy stripe-webhook   # verify_jwt=false (config.toml)
    supabase functions deploy pre-arrival       # verify_jwt=false
+   supabase functions deploy contact           # kräver secret CONTACT_TO
    ```
 4. **Stripe webhook:** peka en webhook till `.../functions/v1/stripe-webhook`
    för händelserna `checkout.session.completed`,

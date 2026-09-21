@@ -18,22 +18,55 @@ function formatDate(iso: string): string {
   )
 }
 
-async function send(to: string, subject: string, html: string) {
+async function send(to: string, subject: string, html: string, replyTo?: string) {
   if (!RESEND_API_KEY) {
     console.warn('RESEND_API_KEY saknas – hoppar över mejlutskick.')
     return
   }
+  const payload: Record<string, unknown> = { from: EMAIL_FROM, to, subject, html }
+  if (replyTo) payload.reply_to = replyTo
   const res = await fetch('https://api.resend.com/emails', {
     method: 'POST',
     headers: {
       Authorization: `Bearer ${RESEND_API_KEY}`,
       'Content-Type': 'application/json',
     },
-    body: JSON.stringify({ from: EMAIL_FROM, to, subject, html }),
+    body: JSON.stringify(payload),
   })
   if (!res.ok) {
     console.error('Resend-fel:', res.status, await res.text())
   }
+}
+
+function escapeHtml(s: string): string {
+  return s
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+}
+
+// Kontaktförfrågan → skickas till ägaren (CONTACT_TO), reply-to gästen.
+export async function sendContactEmail(msg: {
+  name: string
+  email: string
+  subject: string
+  message: string
+}) {
+  const to = Deno.env.get('CONTACT_TO')
+  if (!to) {
+    console.warn('CONTACT_TO saknas – hoppar över kontaktmejl.')
+    return
+  }
+  const html = `
+  <div style="font-family: Arial, sans-serif; color: #1f2a24; max-width: 560px;">
+    <h2 style="color: #2f5d50;">Neue Kontaktanfrage</h2>
+    <p><strong>Name:</strong> ${escapeHtml(msg.name)}</p>
+    <p><strong>E-Mail:</strong> ${escapeHtml(msg.email)}</p>
+    <p><strong>Betreff:</strong> ${escapeHtml(msg.subject || '—')}</p>
+    <p style="white-space: pre-wrap;">${escapeHtml(msg.message)}</p>
+  </div>`
+  await send(to, `Kontaktanfrage: ${msg.subject || msg.name}`, html, msg.email)
 }
 
 import type { ArrivalInfo } from './arrival.ts'
